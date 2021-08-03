@@ -1,0 +1,3250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AuthenticationError Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Enum/AuthenticationError" class="dashAnchor"></a>
+
+    <a title="AuthenticationError Enumeration Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (96% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      AuthenticationError Enumeration Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AuthenticationParameters.html">AuthenticationParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Checkout3DSService.html">Checkout3DSService</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DefaultButtonCustomization.html">DefaultButtonCustomization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DefaultButtonCustomizations.html">DefaultButtonCustomizations</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DefaultCancelButtonCustomization.html">DefaultCancelButtonCustomization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DefaultContinueButtonCustomization.html">DefaultContinueButtonCustomization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DefaultEntrySelectionCustomization.html">DefaultEntrySelectionCustomization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DefaultFooterCustomization.html">DefaultFooterCustomization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DefaultLabelCustomization.html">DefaultLabelCustomization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DefaultNextButtonCustomization.html">DefaultNextButtonCustomization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DefaultResendButtonCustomization.html">DefaultResendButtonCustomization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DefaultSystemColor.html">DefaultSystemColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DefaultToolbarCustomization.html">DefaultToolbarCustomization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DefaultUICustomization.html">DefaultUICustomization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DefaultVerifyButtonCustomization.html">DefaultVerifyButtonCustomization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DefaultWhitelistCustomization.html">DefaultWhitelistCustomization</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AuthenticationError.html">AuthenticationError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/Environment.html">Environment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/Warning.html">Warning</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/Warning/Severity.html">– Severity</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ButtonCustomization.html">ButtonCustomization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ButtonCustomizations.html">ButtonCustomizations</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Customization.html">Customization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EntrySelectionCustomization.html">EntrySelectionCustomization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/FooterCustomization.html">FooterCustomization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/LabelCustomization.html">LabelCustomization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ToolbarCustomization.html">ToolbarCustomization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/UICustomization.html">UICustomization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/WhitelistCustomization.html">WhitelistCustomization</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>AuthenticationError</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span><span class="p">(</span><span class="kt">Checkout3DSAuthenticationError</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AuthenticationError</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="kt">Error</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">CaseIterable</span></code></pre>
+
+                </div>
+              </div>
+            <p>This enum holds the details for the error result of the authentication process.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This enum conforms to the Swift error type, therefore it will be bridged to Objective-C through the generation of an error domain constant and corresponding error code constants.
+
+</div>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/AuthenticationProcessError"></a>
+                <a name="//apple_ref/swift/Section/AuthenticationProcessError" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/AuthenticationProcessError"></a>
+                  <h3 class="section-name"><p>AuthenticationProcessError</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInvalidSessionID"></a>
+                    <a name="//apple_ref/swift/Element/invalidSessionID" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInvalidSessionID">invalidSessionID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An invalid Session ID was provided.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">invalidSessionID</span> <span class="o">=</span> <span class="mi">1000</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInvalidSessionSecret"></a>
+                    <a name="//apple_ref/swift/Element/invalidSessionSecret" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInvalidSessionSecret">invalidSessionSecret</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An invalid Session Secret was provided.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">invalidSessionSecret</span> <span class="o">=</span> <span class="mi">1001</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorChallengeCancelled"></a>
+                    <a name="//apple_ref/swift/Element/challengeCancelled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorChallengeCancelled">challengeCancelled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The authentication process was cancelled by the user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">challengeCancelled</span> <span class="o">=</span> <span class="mi">1002</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorChallengeTimeout"></a>
+                    <a name="//apple_ref/swift/Element/challengeTimeout" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorChallengeTimeout">challengeTimeout</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The authentication timed out whilst waiting for the user to complete the challenge.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">challengeTimeout</span> <span class="o">=</span> <span class="mi">1003</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorAuthenticationVerificationUnsuccessful"></a>
+                    <a name="//apple_ref/swift/Element/authenticationVerificationUnsuccessful" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorAuthenticationVerificationUnsuccessful">authenticationVerificationUnsuccessful</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The authentication completed but was unsuccessful.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">authenticationVerificationUnsuccessful</span> <span class="o">=</span> <span class="mi">1004</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorDuplicateAuthenticationRequest"></a>
+                    <a name="//apple_ref/swift/Element/duplicateAuthenticationRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorDuplicateAuthenticationRequest">duplicateAuthenticationRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A second authentication request was made before the first request is completed with the same <code>sessionID</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">duplicateAuthenticationRequest</span> <span class="o">=</span> <span class="mi">1006</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorConcurrentAuthenticationRequest"></a>
+                    <a name="//apple_ref/swift/Element/concurrentAuthenticationRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorConcurrentAuthenticationRequest">concurrentAuthenticationRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A second authentication request was made before the first request is completed with a different <code>sessionID</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">concurrentAuthenticationRequest</span> <span class="o">=</span> <span class="mi">1007</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorSdkPListModified"></a>
+                    <a name="//apple_ref/swift/Element/sdkPListModified" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorSdkPListModified">sdkPListModified</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK’s info.plist has been modified. To ensure security, the 3DS SDK will not operate will an amended info.plist.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">sdkPListModified</span> <span class="o">=</span> <span class="mi">1008</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorCertificateTransparencyOverriddenByApp"></a>
+                    <a name="//apple_ref/swift/Element/certificateTransparencyOverriddenByApp" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorCertificateTransparencyOverriddenByApp">certificateTransparencyOverriddenByApp</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Certificate Transparency for Checkout.com domains have been overridden by the app’s info.plist.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">certificateTransparencyOverriddenByApp</span> <span class="o">=</span> <span class="mi">1009</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/ConnectivityError"></a>
+                <a name="//apple_ref/swift/Section/ConnectivityError" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/ConnectivityError"></a>
+                  <h3 class="section-name"><p>ConnectivityError</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorNoInternetConnectivity"></a>
+                    <a name="//apple_ref/swift/Element/noInternetConnectivity" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorNoInternetConnectivity">noInternetConnectivity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>No internet connectivity.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">noInternetConnectivity</span> <span class="o">=</span> <span class="mi">2000</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorConnectionFailed"></a>
+                    <a name="//apple_ref/swift/Element/connectionFailed" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorConnectionFailed">connectionFailed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Connection failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">connectionFailed</span> <span class="o">=</span> <span class="mi">2001</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorConnectionTimeout"></a>
+                    <a name="//apple_ref/swift/Element/connectionTimeout" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorConnectionTimeout">connectionTimeout</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Connection timeout.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">connectionTimeout</span> <span class="o">=</span> <span class="mi">2002</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorConnectionLost"></a>
+                    <a name="//apple_ref/swift/Element/connectionLost" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorConnectionLost">connectionLost</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A client or server connection was severed in the middle of an in-progress load. See <a href="https://developer.apple.com/documentation/foundation/1508628-url_loading_system_error_codes/nsurlerrornetworkconnectionlost">NSURLErrorNetworkConnectionLost</a> for more detail.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">connectionLost</span> <span class="o">=</span> <span class="mi">2003</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternationalRoamingOff"></a>
+                    <a name="//apple_ref/swift/Element/internationalRoamingOff" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternationalRoamingOff">internationalRoamingOff</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The attempted connection required activating a data context while roaming, but international roaming is disabled. See <a href="https://developer.apple.com/documentation/foundation/nsurlerrorinternationalroamingoff">NSURLErrorInternationalRoamingOff</a> for more detail.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internationalRoamingOff</span> <span class="o">=</span> <span class="mi">2004</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorUnknownNetworkError"></a>
+                    <a name="//apple_ref/swift/Element/unknownNetworkError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorUnknownNetworkError">unknownNetworkError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The URL Loading System encountered an error that it can’t interpret (see <a href="https://developer.apple.com/documentation/foundation/nsurlerrorunknown">NSURLErrorUnknown</a>), or the error code received from URLSession does not match the ones above.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">unknownNetworkError</span> <span class="o">=</span> <span class="mi">2005</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorCertificateTransparencyChecksFailed"></a>
+                    <a name="//apple_ref/swift/Element/certificateTransparencyChecksFailed" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorCertificateTransparencyChecksFailed">certificateTransparencyChecksFailed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Certificate Transparency Check Failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">certificateTransparencyChecksFailed</span> <span class="o">=</span> <span class="mi">2006</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/ThreeDS2ProtocolError"></a>
+                <a name="//apple_ref/swift/Section/ThreeDS2ProtocolError" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/ThreeDS2ProtocolError"></a>
+                  <h3 class="section-name"><p>ThreeDS2ProtocolError</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3010"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3010" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3010">threeDS2ProtocolError3010</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the card issuer could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3010</span> <span class="o">=</span> <span class="mi">3010</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3011"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3011" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3011">threeDS2ProtocolError3011</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Challenge limit of 255 exceeded.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3011</span> <span class="o">=</span> <span class="mi">3011</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3012"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3012" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3012">threeDS2ProtocolError3012</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An error was reported by the card issuer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3012</span> <span class="o">=</span> <span class="mi">3012</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3101"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3101" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3101">threeDS2ProtocolError3101</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the card issuer could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3101</span> <span class="o">=</span> <span class="mi">3101</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3102"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3102" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3102">threeDS2ProtocolError3102</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the card issuer could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3102</span> <span class="o">=</span> <span class="mi">3102</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3201"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3201" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3201">threeDS2ProtocolError3201</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the card issuer could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3201</span> <span class="o">=</span> <span class="mi">3201</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3202"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3202" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3202">threeDS2ProtocolError3202</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the card issuer could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3202</span> <span class="o">=</span> <span class="mi">3202</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3203"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3203" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3203">threeDS2ProtocolError3203</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the card issuer could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3203</span> <span class="o">=</span> <span class="mi">3203</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3204"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3204" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3204">threeDS2ProtocolError3204</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the card issuer could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3204</span> <span class="o">=</span> <span class="mi">3204</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3301"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3301" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3301">threeDS2ProtocolError3301</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the card issuer could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3301</span> <span class="o">=</span> <span class="mi">3301</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3302"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3302" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3302">threeDS2ProtocolError3302</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the card issuer could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3302</span> <span class="o">=</span> <span class="mi">3302</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3402"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3402" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3402">threeDS2ProtocolError3402</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The transaction timed out.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3402</span> <span class="o">=</span> <span class="mi">3402</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3500"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3500" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3500">threeDS2ProtocolError3500</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The card issuer reported that authentication could not be performed, due to a technical or other problem.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3500</span> <span class="o">=</span> <span class="mi">3500</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3501"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3501" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3501">threeDS2ProtocolError3501</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An error was reported by the 3DS Server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3501</span> <span class="o">=</span> <span class="mi">3501</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3502"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3502" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3502">threeDS2ProtocolError3502</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the 3DS Server could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3502</span> <span class="o">=</span> <span class="mi">3502</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3503"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3503" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3503">threeDS2ProtocolError3503</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the 3DS Server could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3503</span> <span class="o">=</span> <span class="mi">3503</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3504"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3504" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3504">threeDS2ProtocolError3504</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the 3DS Server could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3504</span> <span class="o">=</span> <span class="mi">3504</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3505"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3505" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3505">threeDS2ProtocolError3505</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the 3DS Server could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3505</span> <span class="o">=</span> <span class="mi">3505</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3506"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3506" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3506">threeDS2ProtocolError3506</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the 3DS Server could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3506</span> <span class="o">=</span> <span class="mi">3506</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3507"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3507" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3507">threeDS2ProtocolError3507</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the 3DS Server could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3507</span> <span class="o">=</span> <span class="mi">3507</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3508"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3508" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3508">threeDS2ProtocolError3508</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the 3DS Server could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3508</span> <span class="o">=</span> <span class="mi">3508</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3509"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3509" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3509">threeDS2ProtocolError3509</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3509</span> <span class="o">=</span> <span class="mi">3509</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3510"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3510" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3510">threeDS2ProtocolError3510</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3510</span> <span class="o">=</span> <span class="mi">3510</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3511"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3511" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3511">threeDS2ProtocolError3511</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3511</span> <span class="o">=</span> <span class="mi">3511</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3512"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3512" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3512">threeDS2ProtocolError3512</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3512</span> <span class="o">=</span> <span class="mi">3512</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3513"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3513" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3513">threeDS2ProtocolError3513</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3513</span> <span class="o">=</span> <span class="mi">3513</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3514"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3514" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3514">threeDS2ProtocolError3514</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3514</span> <span class="o">=</span> <span class="mi">3514</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3515"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3515" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3515">threeDS2ProtocolError3515</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3515</span> <span class="o">=</span> <span class="mi">3515</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3516"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3516" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3516">threeDS2ProtocolError3516</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the card issuer could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3516</span> <span class="o">=</span> <span class="mi">3516</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3517"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3517" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3517">threeDS2ProtocolError3517</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3517</span> <span class="o">=</span> <span class="mi">3517</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3518"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3518" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3518">threeDS2ProtocolError3518</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3518</span> <span class="o">=</span> <span class="mi">3518</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3519"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3519" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3519">threeDS2ProtocolError3519</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the card issuer could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3519</span> <span class="o">=</span> <span class="mi">3519</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3520"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3520" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3520">threeDS2ProtocolError3520</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the card issuer could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3520</span> <span class="o">=</span> <span class="mi">3520</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3522"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3522" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3522">threeDS2ProtocolError3522</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the 3DS Server could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3522</span> <span class="o">=</span> <span class="mi">3522</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3523"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3523" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3523">threeDS2ProtocolError3523</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3523</span> <span class="o">=</span> <span class="mi">3523</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3524"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3524" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3524">threeDS2ProtocolError3524</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3524</span> <span class="o">=</span> <span class="mi">3524</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3525"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3525" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3525">threeDS2ProtocolError3525</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3525</span> <span class="o">=</span> <span class="mi">3525</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3526"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3526" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3526">threeDS2ProtocolError3526</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3526</span> <span class="o">=</span> <span class="mi">3526</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3527"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3527" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3527">threeDS2ProtocolError3527</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3527</span> <span class="o">=</span> <span class="mi">3527</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3528"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3528" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3528">threeDS2ProtocolError3528</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3528</span> <span class="o">=</span> <span class="mi">3528</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3529"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3529" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3529">threeDS2ProtocolError3529</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3529</span> <span class="o">=</span> <span class="mi">3529</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3530"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3530" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3530">threeDS2ProtocolError3530</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3530</span> <span class="o">=</span> <span class="mi">3530</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3531"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3531" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3531">threeDS2ProtocolError3531</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3531</span> <span class="o">=</span> <span class="mi">3531</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3532"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3532" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3532">threeDS2ProtocolError3532</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3532</span> <span class="o">=</span> <span class="mi">3532</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3533"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3533" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3533">threeDS2ProtocolError3533</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3533</span> <span class="o">=</span> <span class="mi">3533</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3534"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3534" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3534">threeDS2ProtocolError3534</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3534</span> <span class="o">=</span> <span class="mi">3534</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3535"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3535" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3535">threeDS2ProtocolError3535</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3535</span> <span class="o">=</span> <span class="mi">3535</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3536"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3536" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3536">threeDS2ProtocolError3536</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3536</span> <span class="o">=</span> <span class="mi">3536</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3537"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3537" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3537">threeDS2ProtocolError3537</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3537</span> <span class="o">=</span> <span class="mi">3537</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3538"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3538" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3538">threeDS2ProtocolError3538</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3538</span> <span class="o">=</span> <span class="mi">3538</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3539"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3539" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3539">threeDS2ProtocolError3539</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3539</span> <span class="o">=</span> <span class="mi">3539</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3540"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3540" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3540">threeDS2ProtocolError3540</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the card issuer could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3540</span> <span class="o">=</span> <span class="mi">3540</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3541"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3541" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3541">threeDS2ProtocolError3541</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the card issuer could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3541</span> <span class="o">=</span> <span class="mi">3541</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3542"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3542" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3542">threeDS2ProtocolError3542</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the card issuer could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3542</span> <span class="o">=</span> <span class="mi">3542</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3544"></a>
+                    <a name="//apple_ref/swift/Element/threeDS2ProtocolError3544" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS2ProtocolError3544">threeDS2ProtocolError3544</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS2ProtocolError3544</span> <span class="o">=</span> <span class="mi">3544</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/InternalError"></a>
+                <a name="//apple_ref/swift/Section/InternalError" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/InternalError"></a>
+                  <h3 class="section-name"><p>InternalError</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4000"></a>
+                    <a name="//apple_ref/swift/Element/internalError4000" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4000">internalError4000</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4000</span> <span class="o">=</span> <span class="mi">4000</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4004"></a>
+                    <a name="//apple_ref/swift/Element/internalError4004" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4004">internalError4004</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.
+An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4004</span> <span class="o">=</span> <span class="mi">4004</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4005"></a>
+                    <a name="//apple_ref/swift/Element/internalError4005" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4005">internalError4005</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4005</span> <span class="o">=</span> <span class="mi">4005</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4015"></a>
+                    <a name="//apple_ref/swift/Element/internalError4015" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4015">internalError4015</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4015</span> <span class="o">=</span> <span class="mi">4015</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4016"></a>
+                    <a name="//apple_ref/swift/Element/internalError4016" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4016">internalError4016</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4016</span> <span class="o">=</span> <span class="mi">4016</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4017"></a>
+                    <a name="//apple_ref/swift/Element/internalError4017" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4017">internalError4017</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4017</span> <span class="o">=</span> <span class="mi">4017</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4018"></a>
+                    <a name="//apple_ref/swift/Element/internalError4018" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4018">internalError4018</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4018</span> <span class="o">=</span> <span class="mi">4018</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4019"></a>
+                    <a name="//apple_ref/swift/Element/internalError4019" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4019">internalError4019</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4019</span> <span class="o">=</span> <span class="mi">4019</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4020"></a>
+                    <a name="//apple_ref/swift/Element/internalError4020" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4020">internalError4020</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4020</span> <span class="o">=</span> <span class="mi">4020</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4021"></a>
+                    <a name="//apple_ref/swift/Element/internalError4021" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4021">internalError4021</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4021</span> <span class="o">=</span> <span class="mi">4021</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4022"></a>
+                    <a name="//apple_ref/swift/Element/internalError4022" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4022">internalError4022</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4022</span> <span class="o">=</span> <span class="mi">4022</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4023"></a>
+                    <a name="//apple_ref/swift/Element/internalError4023" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4023">internalError4023</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4023</span> <span class="o">=</span> <span class="mi">4023</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4024"></a>
+                    <a name="//apple_ref/swift/Element/internalError4024" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4024">internalError4024</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4024</span> <span class="o">=</span> <span class="mi">4024</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4025"></a>
+                    <a name="//apple_ref/swift/Element/internalError4025" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4025">internalError4025</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4025</span> <span class="o">=</span> <span class="mi">4025</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4026"></a>
+                    <a name="//apple_ref/swift/Element/internalError4026" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4026">internalError4026</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4026</span> <span class="o">=</span> <span class="mi">4026</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4027"></a>
+                    <a name="//apple_ref/swift/Element/internalError4027" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4027">internalError4027</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4027</span> <span class="o">=</span> <span class="mi">4027</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4028"></a>
+                    <a name="//apple_ref/swift/Element/internalError4028" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4028">internalError4028</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4028</span> <span class="o">=</span> <span class="mi">4028</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4029"></a>
+                    <a name="//apple_ref/swift/Element/internalError4029" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4029">internalError4029</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4029</span> <span class="o">=</span> <span class="mi">4029</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4030"></a>
+                    <a name="//apple_ref/swift/Element/internalError4030" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4030">internalError4030</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4030</span> <span class="o">=</span> <span class="mi">4030</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4031"></a>
+                    <a name="//apple_ref/swift/Element/internalError4031" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4031">internalError4031</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4031</span> <span class="o">=</span> <span class="mi">4031</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4032"></a>
+                    <a name="//apple_ref/swift/Element/internalError4032" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4032">internalError4032</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4032</span> <span class="o">=</span> <span class="mi">4032</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4033"></a>
+                    <a name="//apple_ref/swift/Element/internalError4033" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4033">internalError4033</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4033</span> <span class="o">=</span> <span class="mi">4033</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4034"></a>
+                    <a name="//apple_ref/swift/Element/internalError4034" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4034">internalError4034</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4034</span> <span class="o">=</span> <span class="mi">4034</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4035"></a>
+                    <a name="//apple_ref/swift/Element/internalError4035" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4035">internalError4035</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4035</span> <span class="o">=</span> <span class="mi">4035</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4036"></a>
+                    <a name="//apple_ref/swift/Element/internalError4036" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4036">internalError4036</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4036</span> <span class="o">=</span> <span class="mi">4036</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4037"></a>
+                    <a name="//apple_ref/swift/Element/internalError4037" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4037">internalError4037</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4037</span> <span class="o">=</span> <span class="mi">4037</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4038"></a>
+                    <a name="//apple_ref/swift/Element/internalError4038" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4038">internalError4038</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4038</span> <span class="o">=</span> <span class="mi">4038</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4039"></a>
+                    <a name="//apple_ref/swift/Element/internalError4039" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4039">internalError4039</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4039</span> <span class="o">=</span> <span class="mi">4039</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4040"></a>
+                    <a name="//apple_ref/swift/Element/internalError4040" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4040">internalError4040</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4040</span> <span class="o">=</span> <span class="mi">4040</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4042"></a>
+                    <a name="//apple_ref/swift/Element/internalError4042" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4042">internalError4042</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4042</span> <span class="o">=</span> <span class="mi">4042</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4043"></a>
+                    <a name="//apple_ref/swift/Element/internalError4043" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4043">internalError4043</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4043</span> <span class="o">=</span> <span class="mi">4043</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4044"></a>
+                    <a name="//apple_ref/swift/Element/internalError4044" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4044">internalError4044</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4044</span> <span class="o">=</span> <span class="mi">4044</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4045"></a>
+                    <a name="//apple_ref/swift/Element/internalError4045" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInternalError4045">internalError4045</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An internal SDK error occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">internalError4045</span> <span class="o">=</span> <span class="mi">4045</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/ThreeDS1ProtocolError"></a>
+                <a name="//apple_ref/swift/Section/ThreeDS1ProtocolError" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/ThreeDS1ProtocolError"></a>
+                  <h3 class="section-name"><p>ThreeDS1ProtocolError</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS1ProtocolError5001"></a>
+                    <a name="//apple_ref/swift/Element/threeDS1ProtocolError5001" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS1ProtocolError5001">threeDS1ProtocolError5001</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A response from the card issuer could not be validated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS1ProtocolError5001</span> <span class="o">=</span> <span class="mi">5001</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS1ProtocolError5002"></a>
+                    <a name="//apple_ref/swift/Element/threeDS1ProtocolError5002" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS1ProtocolError5002">threeDS1ProtocolError5002</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The card issuer reported an error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS1ProtocolError5002</span> <span class="o">=</span> <span class="mi">5002</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS1ProtocolError5003"></a>
+                    <a name="//apple_ref/swift/Element/threeDS1ProtocolError5003" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS1ProtocolError5003">threeDS1ProtocolError5003</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS1ProtocolError5003</span> <span class="o">=</span> <span class="mi">5003</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS1ProtocolError5004"></a>
+                    <a name="//apple_ref/swift/Element/threeDS1ProtocolError5004" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS1ProtocolError5004">threeDS1ProtocolError5004</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS1ProtocolError5004</span> <span class="o">=</span> <span class="mi">5004</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS1ProtocolError5006"></a>
+                    <a name="//apple_ref/swift/Element/threeDS1ProtocolError5006" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS1ProtocolError5006">threeDS1ProtocolError5006</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS1ProtocolError5006</span> <span class="o">=</span> <span class="mi">5006</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS1ProtocolError5007"></a>
+                    <a name="//apple_ref/swift/Element/threeDS1ProtocolError5007" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS1ProtocolError5007">threeDS1ProtocolError5007</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS1ProtocolError5007</span> <span class="o">=</span> <span class="mi">5007</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS1ProtocolError5500"></a>
+                    <a name="//apple_ref/swift/Element/threeDS1ProtocolError5500" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorThreeDS1ProtocolError5500">threeDS1ProtocolError5500</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK identified an error in the 3D Secure process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">threeDS1ProtocolError5500</span> <span class="o">=</span> <span class="mi">5500</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2021-08-03)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
