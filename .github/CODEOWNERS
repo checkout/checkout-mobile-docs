@@ -1,0 +1,8 @@
+# The mobile team considered as owner for all files, unless a more specialised team is found.
+*                           @checkout/mobile
+
+# Documentation owned by the Android team
+/checkout-3ds-sdk-android/   @checkout/mobile-android
+
+# Documentation owned by the iOS team
+/checkout-3ds-sdk-ios/       @checkout/mobile-ios
