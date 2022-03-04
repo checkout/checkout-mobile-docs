@@ -1,6 +1,34 @@
 {
   "warnings": [
     {
+      "file": "/Users/deepesh.vasthimal/Documents/Workspace/3DS2-SDK-iOS/Checkout3DS/Networking/Models/SessionDetailsResponse/SessionDetailsResponse+AccessControlServer.swift",
+      "line": 45,
+      "symbol": "SessionDetailsResponse.AccessControlServer",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deepesh.vasthimal/Documents/Workspace/3DS2-SDK-iOS/Checkout3DS/UI/Challenge3DS1ViewController/Challenge3DS1ViewController.swift",
+      "line": 89,
+      "symbol": "Challenge3DS1ViewController.webView(_:runJavaScriptAlertPanelWithMessage:initiatedByFrame:completionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deepesh.vasthimal/Documents/Workspace/3DS2-SDK-iOS/Checkout3DS/UI/Challenge3DS1ViewController/Challenge3DS1ViewController.swift",
+      "line": 101,
+      "symbol": "Challenge3DS1ViewController.webView(_:runJavaScriptConfirmPanelWithMessage:initiatedByFrame:completionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deepesh.vasthimal/Documents/Workspace/3DS2-SDK-iOS/Checkout3DS/UI/Challenge3DS1ViewController/Challenge3DS1ViewController.swift",
+      "line": 117,
+      "symbol": "Challenge3DS1ViewController.webView(_:runJavaScriptTextInputPanelWithPrompt:defaultText:initiatedByFrame:completionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/deepesh.vasthimal/Documents/Workspace/3DS2-SDK-iOS/Checkout3DS/UI/UICustomizing/Customizations/ButtonCustomization.swift",
       "line": 30,
       "symbol": "ButtonCustomization.shadowColor",
