@@ -1,82 +1,110 @@
 {
   "warnings": [
     {
-      "file": "/Users/deepesh.vasthimal/Documents/Workspace/3DS2-SDK-iOS/Checkout3DS/UI/UICustomizing/Customizations/ButtonCustomization.swift",
+      "file": "/Users/daven.gomes/Documents/Projects/3ds2-sdk-ios/Checkout3DS/Networking/Models/SessionDetailsResponse/SessionDetailsResponse+AccessControlServer.swift",
+      "line": 45,
+      "symbol": "SessionDetailsResponse.AccessControlServer",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daven.gomes/Documents/Projects/3ds2-sdk-ios/Checkout3DS/UI/Challenge3DS1ViewController/Challenge3DS1ViewController.swift",
+      "line": 89,
+      "symbol": "Challenge3DS1ViewController.webView(_:runJavaScriptAlertPanelWithMessage:initiatedByFrame:completionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daven.gomes/Documents/Projects/3ds2-sdk-ios/Checkout3DS/UI/Challenge3DS1ViewController/Challenge3DS1ViewController.swift",
+      "line": 101,
+      "symbol": "Challenge3DS1ViewController.webView(_:runJavaScriptConfirmPanelWithMessage:initiatedByFrame:completionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daven.gomes/Documents/Projects/3ds2-sdk-ios/Checkout3DS/UI/Challenge3DS1ViewController/Challenge3DS1ViewController.swift",
+      "line": 117,
+      "symbol": "Challenge3DS1ViewController.webView(_:runJavaScriptTextInputPanelWithPrompt:defaultText:initiatedByFrame:completionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daven.gomes/Documents/Projects/3ds2-sdk-ios/Checkout3DS/UI/UICustomizing/Customizations/ButtonCustomization.swift",
       "line": 30,
       "symbol": "ButtonCustomization.shadowColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/deepesh.vasthimal/Documents/Workspace/3DS2-SDK-iOS/Checkout3DS/UI/UICustomizing/Customizations/ButtonCustomization.swift",
+      "file": "/Users/daven.gomes/Documents/Projects/3ds2-sdk-ios/Checkout3DS/UI/UICustomizing/Customizations/ButtonCustomization.swift",
       "line": 32,
       "symbol": "ButtonCustomization.shadowOffset",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/deepesh.vasthimal/Documents/Workspace/3DS2-SDK-iOS/Checkout3DS/UI/UICustomizing/Customizations/ButtonCustomization.swift",
+      "file": "/Users/daven.gomes/Documents/Projects/3ds2-sdk-ios/Checkout3DS/UI/UICustomizing/Customizations/ButtonCustomization.swift",
       "line": 34,
       "symbol": "ButtonCustomization.shadowRadius",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/deepesh.vasthimal/Documents/Workspace/3DS2-SDK-iOS/Checkout3DS/UI/UICustomizing/Customizations/ButtonCustomization.swift",
+      "file": "/Users/daven.gomes/Documents/Projects/3ds2-sdk-ios/Checkout3DS/UI/UICustomizing/Customizations/ButtonCustomization.swift",
       "line": 36,
       "symbol": "ButtonCustomization.shadowOpacity",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/deepesh.vasthimal/Documents/Workspace/3DS2-SDK-iOS/Checkout3DS/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
+      "file": "/Users/daven.gomes/Documents/Projects/3ds2-sdk-ios/Checkout3DS/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
       "line": 10,
       "symbol": "ButtonCustomizations",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/deepesh.vasthimal/Documents/Workspace/3DS2-SDK-iOS/Checkout3DS/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
+      "file": "/Users/daven.gomes/Documents/Projects/3ds2-sdk-ios/Checkout3DS/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
       "line": 12,
       "symbol": "ButtonCustomizations.verifyButtonCustomization",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/deepesh.vasthimal/Documents/Workspace/3DS2-SDK-iOS/Checkout3DS/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
+      "file": "/Users/daven.gomes/Documents/Projects/3ds2-sdk-ios/Checkout3DS/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
       "line": 13,
       "symbol": "ButtonCustomizations.continueFlowButtonCustomization",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/deepesh.vasthimal/Documents/Workspace/3DS2-SDK-iOS/Checkout3DS/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
+      "file": "/Users/daven.gomes/Documents/Projects/3ds2-sdk-ios/Checkout3DS/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
       "line": 14,
       "symbol": "ButtonCustomizations.nextButtonCustomization",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/deepesh.vasthimal/Documents/Workspace/3DS2-SDK-iOS/Checkout3DS/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
+      "file": "/Users/daven.gomes/Documents/Projects/3ds2-sdk-ios/Checkout3DS/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
       "line": 15,
       "symbol": "ButtonCustomizations.cancelButtonCustomization",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/deepesh.vasthimal/Documents/Workspace/3DS2-SDK-iOS/Checkout3DS/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
+      "file": "/Users/daven.gomes/Documents/Projects/3ds2-sdk-ios/Checkout3DS/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
       "line": 16,
       "symbol": "ButtonCustomizations.resendButtonCustomization",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/deepesh.vasthimal/Documents/Workspace/3DS2-SDK-iOS/Checkout3DS/UI/UICustomizing/Customizations/WhitelistCustomization.swift",
+      "file": "/Users/daven.gomes/Documents/Projects/3ds2-sdk-ios/Checkout3DS/UI/UICustomizing/Customizations/WhitelistCustomization.swift",
       "line": 37,
       "symbol": "DefaultWhitelistCustomization.init(font:textColor:switchTintColor:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/deepesh.vasthimal/Documents/Workspace/3DS2-SDK-iOS"
+  "source_directory": "/Users/daven.gomes/Documents/Projects/3ds2-sdk-ios"
 }
