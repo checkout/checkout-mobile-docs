@@ -106,6 +106,12 @@
                 <a class="nav-group-task-link" href="Enums/Environment.html">Environment</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/Standalone3DSService.html">Standalone3DSService</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/Standalone3DSService/Constants.html">– Constants</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/Warning.html">Warning</a>
               </li>
               <li class="nav-group-task">
@@ -135,13 +141,42 @@
                 <a class="nav-group-task-link" href="Protocols/LabelCustomization.html">LabelCustomization</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/ThreeDS2Service.html">ThreeDS2Service</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/ToolbarCustomization.html">ToolbarCustomization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/Transaction.html">Transaction</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/UICustomization.html">UICustomization</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/WhitelistCustomization.html">WhitelistCustomization</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/AuthenticationRequestParameters.html">AuthenticationRequestParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ChallengeParameters.html">ChallengeParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ChallengeResult.html">ChallengeResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ThreeDS2ServiceConfiguration.html">ThreeDS2ServiceConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ThreeDS2ServiceConfiguration/ConfigParameters.html">– ConfigParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/ThreeDS2ServiceConfiguration/DirectoryServerData.html">– DirectoryServerData</a>
               </li>
             </ul>
           </li>
@@ -158,7 +193,9 @@
 
 <p>The SDK handles the device data collection, communication with the card issuer, and presentation of 3D Secure challenges to the customer when required. </p>
 
-<p>👉&nbsp;&nbsp;<a href="https://docs.checkout.com/3d-secure-mobile-sdks">See the Integration Guide with Code Examples</a></p>
+<p>👉&nbsp;&nbsp;<a href="https://www.checkout.com/docs/risk-management/3d-secure/sessions/non-hosted-sessions/3d-secure-mobile-sdks">See the Integration Guide with Code Examples</a></p>
+
+<p>📚&nbsp;&nbsp;<a href="https://checkout.github.io/checkout-mobile-docs/checkout-3ds-sdk-ios/index.html">Read the reference documentation</a></p>
 <h2 id='features' class='heading'>Features</h2>
 
 <ol>
@@ -170,23 +207,186 @@
 </ol>
 <h2 id='minimum-requirements' class='heading'>Minimum Requirements</h2>
 
-<p>The 3DS SDK for iOS requires Xcode 12.0 and above with Swift version 5.3 and above, and supports apps targeting iOS 11.0 and above. It also supports Objective-C.</p>
+<p>The 3DS SDK for iOS requires Xcode 13.1 and above with Swift version 5.6.2 and above, and supports apps targeting iOS 11.0 and above. It also supports Objective-C. There are two ways to integrate into our 3DS SDK.</p>
 <h2 id='getting-started' class='heading'>Getting Started</h2>
 
 <p>First, integrate the 3DS SDK into your app.</p>
+<h3 id='integrating-with-cocoapods' class='heading'>Integrating with CocoaPods</h3>
+
+<p><a href="http://cocoapods.org">CocoaPods</a> is the traditional dependency manager for Apple projects. We still support it, but we&rsquo;re not always able to validate all its peculiar ways.</p>
+
+<p>Make sure cocoapods is installed on your machine by running</p>
+<pre class="highlight shell"><code><span class="gp">$ </span>pod --version
+</code></pre>
+
+<p>Any version newer than <strong>1.10.0</strong> is a good sign. If not installed, or unsupported, follow <a href="https://guides.cocoapods.org/using/getting-started.html">Cocoapods Getting Started</a></p>
+
+<p>Once Cocoapods of a valid version is on your machine, to integrate Frames into your Xcode project, update your <code>Podfile</code>:</p>
+<pre class="highlight ruby"><code><span class="n">platform</span> <span class="ss">:ios</span><span class="p">,</span> <span class="s1">'12.0'</span>
+<span class="n">use_frameworks!</span>
+
+<span class="n">target</span> <span class="s1">'&lt;Your Target Name&gt;'</span> <span class="k">do</span>
+  <span class="n">pod</span> <span class="s1">'Checkout3DS'</span><span class="p">,</span> <span class="ss">:git</span> <span class="o">=&gt;</span> <span class="s1">'git@github.com:checkout/checkout-3ds-sdk-ios.git'</span><span class="p">,</span> <span class="ss">:tag</span> <span class="o">=&gt;</span> <span class="s1">''</span>
+<span class="k">end</span>
+
+<span class="n">post_install</span> <span class="k">do</span> <span class="o">|</span><span class="n">installer</span><span class="o">|</span>
+  <span class="n">installer</span><span class="p">.</span><span class="nf">pods_project</span><span class="p">.</span><span class="nf">targets</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">target</span><span class="o">|</span>
+    <span class="n">target</span><span class="p">.</span><span class="nf">build_configurations</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+      <span class="n">config</span><span class="p">.</span><span class="nf">build_settings</span><span class="p">[</span><span class="s1">'BUILD_LIBRARY_FOR_DISTRIBUTION'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'YES'</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+</code></pre>
+
+<p>Then, run the following command in terminal:</p>
+<pre class="highlight shell"><code><span class="gp">$ </span>pod install
+</code></pre>
+
+<p>Note: your Pod setup may have the following <a href="https://github.com/checkout/checkout-3ds-sdk-ios/issues/4">issue</a></p>
+
+<p>To update your existing Cocoapod dependencies, use:</p>
+<pre class="highlight shell"><code><span class="gp">$ </span>pod update
+</code></pre>
 
 <p>Then, configure your app to:</p>
+<h3 id='integrating-with-checkout-3ds-servers' class='heading'>Integrating with Checkout 3DS servers</h3>
+
+<p>This integration method involves one call to our <code>authenticate</code> method, which will perform an entire Authentication flow using Checkout.com&rsquo;s 3DS servers.</p>
 
 <ol>
-<li>Initialize the SDK with your preferred user interface options.</li>
+<li>Initialize the SDK with your preferred user interface options using our <code>uiCustomization</code> object.</li>
 <li>Configure the parameters for an authentication.</li>
 <li>Request authentication and handle the result to continue your payment flow.</li>
 </ol>
+<h2 id='code-snippet' class='heading'>Code snippet</h2>
+<pre class="highlight swift"><code><span class="c1">// 1. Init with defaults</span>
+<span class="k">let</span> <span class="nv">checkout3DS</span> <span class="o">=</span> <span class="kt">Checkout3DSService</span><span class="p">()</span>
 
-<p>👉&nbsp;&nbsp;<a href="https://docs.checkout.com/3d-secure-mobile-sdks">See the Integration Guide with Code Examples</a> for full details.</p>
+<span class="c1">// 2. Init with explicit arguments</span>
+<span class="k">let</span> <span class="nv">checkout3DS</span> <span class="o">=</span> <span class="kt">Checkout3DSService</span><span class="p">(</span>
+    <span class="nv">environment</span><span class="p">:</span> <span class="o">.</span><span class="n">production</span><span class="p">,</span>
+    <span class="nv">locale</span><span class="p">:</span> <span class="kt">Locale</span><span class="p">(</span><span class="nv">identifier</span><span class="p">:</span> <span class="s">"en_GB"</span><span class="p">),</span>
+    <span class="nv">uiCustomization</span><span class="p">:</span> <span class="n">uiCustomization</span><span class="p">,</span>
+    <span class="nv">appURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"myapp://my-app-url"</span><span class="p">)</span><span class="o">!</span>
+<span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">authenticationParameters</span> <span class="o">=</span> <span class="kt">AuthenticationParameters</span><span class="p">(</span>
+    <span class="nv">sessionID</span><span class="p">:</span> <span class="n">sessionID</span><span class="p">,</span>
+    <span class="nv">sessionSecret</span><span class="p">:</span> <span class="n">sessionSecret</span><span class="p">,</span>
+    <span class="nv">scheme</span><span class="p">:</span> <span class="n">scheme</span><span class="p">)</span>
+
+<span class="n">checkout3DS</span><span class="o">.</span><span class="nf">authenticate</span><span class="p">(</span><span class="nv">authenticationParameters</span><span class="p">:</span> <span class="n">authenticationParameters</span><span class="p">)</span> <span class="p">{</span> <span class="n">error</span> <span class="k">in</span>
+    <span class="k">if</span> <span class="k">let</span> <span class="nv">error</span> <span class="o">=</span> <span class="n">error</span> <span class="p">{</span>
+        <span class="c1">// Handle error.</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// Continue with payment.</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>👉&nbsp;&nbsp;<a href="https://www.checkout.com/docs/risk-management/3d-secure/sessions/non-hosted-sessions/3d-secure-mobile-sdks">See the Integration Guide with Code Examples</a> for full details.</p>
+
+<p>📚&nbsp;&nbsp;<a href="https://checkout.github.io/checkout-mobile-docs/checkout-3ds-sdk-ios/index.html">Read the reference documentation</a></p>
+<h3 id='integrating-with-any-3ds-provider' class='heading'>Integrating with any 3DS provider</h3>
+
+<p>Standalone 3DS allows our SDKs to be used with any Authentication provider, be it Checkout.com or otherwise. This is a higher touch integration that breaks up the 3DS flow more granularly. In order to integrate with the Standalone 3DS service:</p>
+
+<ol>
+<li>Initialize the SDK with your preferred user interface options using our <code>uiCustomization</code> object.</li>
+<li>Create <code>transaction</code> object</li>
+<li>Get <code>authenticationRequestParameters</code> for the AReq</li>
+<li>if a challenge is mandated from the Authentication response from your 3DS server then call the <code>doChallenge</code> method to render the challenge however, if the challenge is not mandated by the ACS then it would have triggered a frictionless 3DS flow.</li>
+</ol>
+<h2 id='diagram' class='heading'>Diagram</h2>
+
+<p>Here is a useful diagram that highlights the end-to-end 3DS flow using our <code>standalone3DSService</code>.
+<img src="https://user-images.githubusercontent.com/102961713/226956636-d39b7bff-9fb8-4701-a3bc-86d932b306f0.jpg" alt="E2E Standalone SDK Flow"></p>
+<h2 id='code-snippet' class='heading'>Code snippet</h2>
+
+<p>1- Creates an instance of <code><a href="Protocols/ThreeDS2Service.html">ThreeDS2Service</a></code> through which the 3DS Requestor App can create a transaction object to get the <code>authenticationRequestParameters</code> that are required to perform a challenge:</p>
+<pre class="highlight swift"><code>   <span class="kd">private</span> <span class="k">var</span> <span class="nv">transaction</span><span class="p">:</span> <span class="kt">Transaction</span><span class="p">?</span>
+   <span class="kd">private</span> <span class="k">var</span> <span class="nv">standalone3DSService</span><span class="p">:</span> <span class="kt">ThreeDS2Service</span><span class="p">?</span>
+</code></pre>
+
+<p>2-Initialize the SDK with your preferred user interface options:</p>
+
+<ul>
+<li><code>scheme</code> can be set only as <code>visa</code> and <code>mastercard</code> in lower case string.</li>
+</ul>
+<pre class="highlight swift"><code><span class="c1">// initialise Standalone 3DS Service with required parameters</span>
+
+<span class="k">do</span> <span class="p">{</span>
+   <span class="k">let</span> <span class="nv">directoryServerData</span> <span class="o">=</span> <span class="kt">ThreeDS2ServiceConfiguration</span><span class="o">.</span><span class="kt">DirectoryServerData</span><span class="p">(</span><span class="nv">directoryServerID</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">directoryServerID</span><span class="o">&gt;</span><span class="p">,</span>
+                                                                              <span class="nv">directoryServerPublicKey</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">ds_public</span><span class="o">&gt;</span><span class="p">,</span>
+                                                                              <span class="nv">directoryServerRootCertificates</span><span class="p">:</span> <span class="p">[</span><span class="o">&lt;</span><span class="n">caPublic</span><span class="o">&gt;</span><span class="p">])</span>
+   <span class="k">let</span> <span class="nv">configParameters</span> <span class="o">=</span> <span class="kt">ThreeDS2ServiceConfiguration</span><span class="o">.</span><span class="kt">ConfigParameters</span><span class="p">(</span><span class="nv">directoryServerData</span><span class="p">:</span> <span class="n">directoryServerData</span><span class="p">,</span>
+                                                                        <span class="nv">messageVersion</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">messageVersion</span><span class="o">&gt;</span><span class="p">,</span>
+                                                                        <span class="nv">scheme</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">scheme</span><span class="o">&gt;</span><span class="p">)</span>
+    <span class="k">let</span> <span class="nv">serviceConfiguration</span> <span class="o">=</span> <span class="kt">ThreeDS2ServiceConfiguration</span><span class="p">(</span><span class="nv">configParameters</span><span class="p">:</span> <span class="n">configParameters</span><span class="p">)</span>
+
+    <span class="k">self</span><span class="o">.</span><span class="n">standalone3DSService</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">Standalone3DSService</span><span class="o">.</span><span class="nf">initialize</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">serviceConfiguration</span><span class="p">)</span>
+   <span class="p">}</span>  <span class="k">catch</span> <span class="k">let</span> <span class="nv">error</span> <span class="p">{</span>
+      <span class="c1">// handle failure scenario</span>
+   <span class="p">}</span>
+</code></pre>
+
+<ol>
+<li>Create <code>transaction</code> using created <code><a href="Protocols/ThreeDS2Service.html">ThreeDS2Service</a></code> object:</li>
+</ol>
+<pre class="highlight swift"><code>  <span class="k">self</span><span class="o">.</span><span class="n">transaction</span> <span class="o">=</span> <span class="k">self</span><span class="o">.</span><span class="n">standalone3DSService</span><span class="p">?</span><span class="o">.</span><span class="nf">createTransaction</span><span class="p">()</span>
+</code></pre>
+
+<ol>
+<li>Retrieve the <code>authenticationRequestParameters</code>:
+&ldquo;`swift
+// get Authentication Request parameters
+self.transaction?.getAuthenticationRequestParameters { result in
+ switch result {
+ case .success(let params):
+    //Make an Authentication Request to your 3DS Server
+ case .failure(let error):
+    // handle failure scenario
+  }
+}</li>
+</ol>
+<pre class="highlight plaintext"><code>5. Handle the `doChallenge` flow: 
+
+- If the Authentication response that is returned indicates that the Challenge Flow must be applied, the 3DS Requestor App calls the `doChallenge` method with the required input `ChallengeParameters`. The `doChallenge` method initiates the challenge process.
+- The `doChallenge` function now returns a `ChallengeResult` object with `transactionStatus` and `sdkTransactionID`.
+```swift
+let params = ChallengeParameters(threeDSServerTransactionID: response.transactionId,
+                                 acsTransactionID: response.acs.transactionId,
+                                 acsRefNumber: response.acs.referenceNumber,
+                                 acsSignedContent: response.acs.signedContent)
+transaction?.doChallenge(challengeParameters: params, completion: { [weak self]  result in
+     switch result {
+      case .success(let result):
+          // handle success scenario
+      case .failure(let error):
+         // handle failure scenario
+       }
+      // call close and cleanUp methods after challenge flow is completed. 
+      self?.transaction?.close()
+      self?.standalone3DSService?.cleanUp()
+})
+
+</code></pre>
+
+<ol>
+<li>Service <code>cleanUp</code> and transaction <code>close</code>:<br></li>
+</ol>
+
+<ul>
+<li>After a challenge/frictionless flow is completed, you should call:
+<code>swift
+transaction?.close()
+standalone3DSService?.cleanUp()
+</code></li>
+</ul>
 <h2 id='dependencies' class='heading'>Dependencies</h2>
 
-<p>The iOS SDK depends on some external libraries:</p>
+<p>Our iOS SDK depends on some external libraries:</p>
 
 <ul>
 <li>To help maintain security, we use <a href="https://github.com/airsidemobile/JOSESwift">JOSESwift</a>.</li>
@@ -196,9 +396,12 @@
 
 <p><strong>For help using the 3D Secure SDK</strong>, or to pass on your feedback, you can email our team at <a href="mailto:support@checkout.com">support@checkout.com</a>.</p>
 
-<p><strong>If you’ve found a bug</strong>, we encourage you to open an issue through <a href="https://github.com/checkout/3ds-sdk-ios/issues">GitHub</a>. If your problem isn’t already listed, please detail the versions of the SDK and your development environment that you’re using, what you were hoping to accomplish, and what the actual result you observed was.</p>
+<p><strong>If you’ve found a bug</strong>, we encourage you to open an issue through <a href="https://github.com/checkout/checkout-3ds-sdk-ios/issues">GitHub</a>. If your problem isn’t already listed, please detail the versions of the SDK and your development environment that you’re using, what you were hoping to accomplish, and what the actual result you observed was.</p>
 
-<p><strong>If you have an idea for a new feature</strong>, we’d also love to hear about it through GitHub. Please <a href="https://github.com/checkout/3ds-sdk-ios/issues">open an issue</a>, detailing your idea and why it’s important for your project.</p>
+<p><strong>If you have an idea for a new feature</strong>, we’d also love to hear about it through GitHub. Please <a href="https://github.com/checkout/checkout-3ds-sdk-ios/issues">open an issue</a>, detailing your idea and why it’s important for your project.</p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>This software is released under license. See <a href="https://github.com/checkout/checkout-3ds-sdk-ios/blob/develop/LICENSE.md">LICENSE</a> for details.</p>
 
           </div>
         </section>
@@ -207,8 +410,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2022 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2022-03-04)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+      <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2023-04-12)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>
 </html>
