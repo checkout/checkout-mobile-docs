@@ -1,381 +1,407 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html class="no-js">
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>com.checkout.threeds.domain.model</title>
-<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script><script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../styles/style.css" rel="Stylesheet"><link href="../../styles/logo-styles.css" rel="Stylesheet"><link href="../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../scripts/main.js" async="async"></script>  </head>
-  <body>
-    <div id="container">
-      <div id="leftColumn"><a href="../../index.html">
-          <div id="logo"></div>
-        </a>
-        <div id="paneSearch"></div>
-        <div id="sideMenu"></div>
-      </div>
-      <div id="main">
-        <div id="leftToggler"><span class="icon-toggler"></span></div>
-<script type="text/javascript" src="../../scripts/main.js"></script>        <div class="main-content" id="content" pageIds="Checkout 3DS SDK::com.checkout.threeds.domain.model////PointingToDeclaration//1621435678">
-          <div class="navigation-wrapper" id="navigation-wrapper">
-            <div class="breadcrumbs"><a href="../../index.html">Checkout 3DS SDK</a>/<a href="index.html">com.checkout.threeds.domain.model</a></div>
-            <div class="pull-right d-flex">
-              <div id="searchBar"></div>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../index.html">
+                            Checkout 3DS SDK
+                    </a>
             </div>
-          </div>
-          <div class="cover ">
-            <h1 class="cover"><span>Package com.</span><wbr></wbr><span>checkout.</span><wbr></wbr><span>threeds.</span><wbr></wbr><span>domain.</span><wbr></wbr><span>model</span></h1>
-          </div>
-          <div class="tabbedcontent">
-            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Functions">Functions</button></div>
-            <div class="tabs-section-body">
-              <h2 class="">Types</h2>
-              <div class="table" data-togglable="Types"><a data-name="1209707522%2FClasslikes%2F1621435678" anchor-label="AllStyleCustomization" id="1209707522%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-all-style-customization/index.html">AllStyleCustomization</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1209707522%2FClasslikes%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">data class <a href="-all-style-customization/index.html">AllStyleCustomization</a>(<span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html">ColorRes</a>() </span>textColor: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, <span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/FontRes.html">FontRes</a>() </span>textFont: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, <span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html">ColorRes</a>() </span>tint: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+            <div class="library-version">
+3.4.3            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":threeds:dokkaHtml/main">Checkout.com 3DS</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageIds="Checkout 3DS SDK::com.checkout.threeds.domain.model////PointingToDeclaration//1621435678">
+  <div class="breadcrumbs"><a href="../../index.html">Checkout 3DS SDK</a><span class="delimiter">/</span><span class="current">com.checkout.threeds.domain.model</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
   </div>
-<a data-name="1209707522%2FClasslikes%2F1621435678" anchor-label="AllStyleCustomization" id="1209707522%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="1209707522%2FClasslikes%2F1621435678" anchor-label="AllStyleCustomization" id="1209707522%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>General customization for all elements that could be overridden by specific element customisation</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-328071083%2FClasslikes%2F1621435678" anchor-label="AuthenticationError" id="-328071083%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-authentication-error/index.html">AuthenticationError</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-328071083%2FClasslikes%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">data class <a href="-authentication-error/index.html">AuthenticationError</a> : <a href="-authentication-result/index.html">AuthenticationResult</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-328071083%2FClasslikes%2F1621435678" anchor-label="AuthenticationError" id="-328071083%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="-328071083%2FClasslikes%2F1621435678" anchor-label="AuthenticationError" id="-328071083%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>This class holds the details for the error result of the authentication process.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1316809787%2FClasslikes%2F1621435678" anchor-label="AuthenticationErrorType" id="1316809787%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-authentication-error-type/index.html">AuthenticationErrorType</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1316809787%2FClasslikes%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">enum <a href="-authentication-error-type/index.html">AuthenticationErrorType</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a>&lt;<a href="-authentication-error-type/index.html">AuthenticationErrorType</a>&gt; , <a href="https://developer.android.com/reference/kotlin/android/os/Parcelable.html">Parcelable</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="1316809787%2FClasslikes%2F1621435678" anchor-label="AuthenticationErrorType" id="1316809787%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="1316809787%2FClasslikes%2F1621435678" anchor-label="AuthenticationErrorType" id="1316809787%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>This enum holds the type of the error occurred during the authentication process.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-900063269%2FClasslikes%2F1621435678" anchor-label="AuthenticationParameters" id="-900063269%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-authentication-parameters/index.html">AuthenticationParameters</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-900063269%2FClasslikes%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">data class <a href="-authentication-parameters/index.html">AuthenticationParameters</a>(sessionId: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, sessionSecret: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, scheme: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-900063269%2FClasslikes%2F1621435678" anchor-label="AuthenticationParameters" id="-900063269%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="-900063269%2FClasslikes%2F1621435678" anchor-label="AuthenticationParameters" id="-900063269%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>The class used to provide input parameters required for an authentication request.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="472888072%2FClasslikes%2F1621435678" anchor-label="AuthenticationResult" id="472888072%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-authentication-result/index.html">AuthenticationResult</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="472888072%2FClasslikes%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">open class <a href="-authentication-result/index.html">AuthenticationResult</a> : <a href="https://developer.android.com/reference/kotlin/android/os/Parcelable.html">Parcelable</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="472888072%2FClasslikes%2F1621435678" anchor-label="AuthenticationResult" id="472888072%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="472888072%2FClasslikes%2F1621435678" anchor-label="AuthenticationResult" id="472888072%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>This class holds the details for the result of the authentication process.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1667893984%2FClasslikes%2F1621435678" anchor-label="BackgroundCustomization" id="-1667893984%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-background-customization/index.html">BackgroundCustomization</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1667893984%2FClasslikes%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">data class <a href="-background-customization/index.html">BackgroundCustomization</a>(<span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html">ColorRes</a>() </span>backgroundColor: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, <span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/DimenRes.html">DimenRes</a>() </span>cornerRadius: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, <span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html">ColorRes</a>() </span>borderColor: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, <span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/DimenRes.html">DimenRes</a>() </span>borderWidth: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, <span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/DimenRes.html">DimenRes</a>() </span>bgElevation: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1667893984%2FClasslikes%2F1621435678" anchor-label="BackgroundCustomization" id="-1667893984%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="-1667893984%2FClasslikes%2F1621435678" anchor-label="BackgroundCustomization" id="-1667893984%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>Use this class to set the background style of a specified user interface element.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1433374244%2FClasslikes%2F1621435678" anchor-label="ButtonCustomization" id="1433374244%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-button-customization/index.html">ButtonCustomization</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1433374244%2FClasslikes%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">data class <a href="-button-customization/index.html">ButtonCustomization</a>(buttonBackground: <a href="-background-customization/index.html">BackgroundCustomization</a>, label: <a href="-text-style-customization/index.html">TextStyleCustomization</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="1433374244%2FClasslikes%2F1621435678" anchor-label="ButtonCustomization" id="1433374244%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="1433374244%2FClasslikes%2F1621435678" anchor-label="ButtonCustomization" id="1433374244%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>Use this class to set the visual style of the main action button on a 3DS2 challenge screen.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1863802743%2FClasslikes%2F1621435678" anchor-label="EditTextCustomization" id="-1863802743%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-edit-text-customization/index.html">EditTextCustomization</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1863802743%2FClasslikes%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">data class <a href="-edit-text-customization/index.html">EditTextCustomization</a>(input: <a href="-text-style-customization/index.html">TextStyleCustomization</a>, editTextBackground: <a href="-background-customization/index.html">BackgroundCustomization</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1863802743%2FClasslikes%2F1621435678" anchor-label="EditTextCustomization" id="-1863802743%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="-1863802743%2FClasslikes%2F1621435678" anchor-label="EditTextCustomization" id="-1863802743%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>Use this class to set the visual style of the challenge text entry box.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1720252979%2FClasslikes%2F1621435678" anchor-label="FooterCustomization" id="-1720252979%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-footer-customization/index.html">FooterCustomization</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1720252979%2FClasslikes%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">data class <a href="-footer-customization/index.html">FooterCustomization</a>(<span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html">ColorRes</a>() </span>expandIndicatorColor: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, labelStyleCustomization: <a href="-text-style-customization/index.html">TextStyleCustomization</a>, textStyleCustomization: <a href="-text-style-customization/index.html">TextStyleCustomization</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1720252979%2FClasslikes%2F1621435678" anchor-label="FooterCustomization" id="-1720252979%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="-1720252979%2FClasslikes%2F1621435678" anchor-label="FooterCustomization" id="-1720252979%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>Use this class to set the visual style of footer section, at the bottom of a 3DS2 challenge screen.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="291316926%2FClasslikes%2F1621435678" anchor-label="LabelCustomization" id="291316926%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-label-customization/index.html">LabelCustomization</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="291316926%2FClasslikes%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">sealed class <a href="-label-customization/index.html">LabelCustomization</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="291316926%2FClasslikes%2F1621435678" anchor-label="LabelCustomization" id="291316926%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="291316926%2FClasslikes%2F1621435678" anchor-label="LabelCustomization" id="291316926%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>Generic class used to customize the visual style of text on the challenge screen.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-119561495%2FClasslikes%2F1621435678" anchor-label="NavigationBarCustomization" id="-119561495%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-navigation-bar-customization/index.html">NavigationBarCustomization</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-119561495%2FClasslikes%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">data class <a href="-navigation-bar-customization/index.html">NavigationBarCustomization</a>(<span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html">ColorRes</a>() </span>backgroundColor: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, <span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/DimenRes.html">DimenRes</a>() </span>panelElevation: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, headingStyleCustomization: <a href="-text-customization/index.html">TextCustomization</a>, buttonStyleCustomization: <a href="-text-customization/index.html">TextCustomization</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-119561495%2FClasslikes%2F1621435678" anchor-label="NavigationBarCustomization" id="-119561495%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="-119561495%2FClasslikes%2F1621435678" anchor-label="NavigationBarCustomization" id="-119561495%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>Use this class to provide objects that specify user interface customizations for the navigation bar that appears at the top of the challenge screen for 3DS1 and 3DS2, and includes the screen title and the Cancel button.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1888763910%2FClasslikes%2F1621435678" anchor-label="ResultType" id="1888763910%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-result-type/index.html">ResultType</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1888763910%2FClasslikes%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">enum <a href="-result-type/index.html">ResultType</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a>&lt;<a href="-result-type/index.html">ResultType</a>&gt; , <a href="https://developer.android.com/reference/kotlin/android/os/Parcelable.html">Parcelable</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="1888763910%2FClasslikes%2F1621435678" anchor-label="ResultType" id="1888763910%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="1888763910%2FClasslikes%2F1621435678" anchor-label="ResultType" id="1888763910%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>This enum holds the type of the result for the authentication process.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="876878865%2FClasslikes%2F1621435678" anchor-label="SelectorCustomization" id="876878865%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-selector-customization/index.html">SelectorCustomization</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="876878865%2FClasslikes%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">data class <a href="-selector-customization/index.html">SelectorCustomization</a>(<span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html">ColorRes</a>() </span>selectorColor: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, label: <a href="-text-style-customization/index.html">TextStyleCustomization</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="876878865%2FClasslikes%2F1621435678" anchor-label="SelectorCustomization" id="876878865%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="876878865%2FClasslikes%2F1621435678" anchor-label="SelectorCustomization" id="876878865%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>Use this class to set the visual style of options that users can select during a single-select or a multi-select challenge.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-313712704%2FClasslikes%2F1621435678" anchor-label="Severity" id="-313712704%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-severity/index.html">Severity</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-313712704%2FClasslikes%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">enum <a href="-severity/index.html">Severity</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a>&lt;<a href="-severity/index.html">Severity</a>&gt; <span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-313712704%2FClasslikes%2F1621435678" anchor-label="Severity" id="-313712704%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="-313712704%2FClasslikes%2F1621435678" anchor-label="Severity" id="-313712704%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>The severity levels of warnings produced by the SDK.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-186708826%2FClasslikes%2F1621435678" anchor-label="SwitchCustomization" id="-186708826%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-switch-customization/index.html">SwitchCustomization</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-186708826%2FClasslikes%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">data class <a href="-switch-customization/index.html">SwitchCustomization</a>(<span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html">ColorRes</a>() </span>textColor: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, <span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/FontRes.html">FontRes</a>() </span>textFont: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, <span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html">ColorRes</a>() </span>thumbColor: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?) : <a href="-label-customization/index.html">LabelCustomization</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-186708826%2FClasslikes%2F1621435678" anchor-label="SwitchCustomization" id="-186708826%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="-186708826%2FClasslikes%2F1621435678" anchor-label="SwitchCustomization" id="-186708826%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>Use this class to set the visual style of the ‘allow list’ switch that may appear on a 3DS2 challenge screen.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1530467105%2FClasslikes%2F1621435678" anchor-label="TextCustomization" id="-1530467105%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-text-customization/index.html">TextCustomization</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1530467105%2FClasslikes%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">data class <a href="-text-customization/index.html">TextCustomization</a>(<span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html">ColorRes</a>() </span>textColor: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, <span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/FontRes.html">FontRes</a>() </span>textFont: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, <span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/StringRes.html">StringRes</a>() </span>text: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?) : <a href="-label-customization/index.html">LabelCustomization</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1530467105%2FClasslikes%2F1621435678" anchor-label="TextCustomization" id="-1530467105%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="-1530467105%2FClasslikes%2F1621435678" anchor-label="TextCustomization" id="-1530467105%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>Use this class to customize the style of the text in the Navigation Bar used across 3DS1 and 3DS2 challenge screens, as well as the actual text displayed as the title.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1426538418%2FClasslikes%2F1621435678" anchor-label="TextStyleCustomization" id="-1426538418%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-text-style-customization/index.html">TextStyleCustomization</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1426538418%2FClasslikes%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">data class <a href="-text-style-customization/index.html">TextStyleCustomization</a>(<span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html">ColorRes</a>() </span>textColor: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, <span>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/FontRes.html">FontRes</a>() </span>textFont: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?) : <a href="-label-customization/index.html">LabelCustomization</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1426538418%2FClasslikes%2F1621435678" anchor-label="TextStyleCustomization" id="-1426538418%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="-1426538418%2FClasslikes%2F1621435678" anchor-label="TextStyleCustomization" id="-1426538418%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>Use this class to customize the visual style of the text on the challenge screen.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1612292634%2FClasslikes%2F1621435678" anchor-label="UICustomization" id="-1612292634%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-u-i-customization/index.html">UICustomization</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1612292634%2FClasslikes%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">data class <a href="-u-i-customization/index.html">UICustomization</a>(navigationBarCustomization: <a href="-navigation-bar-customization/index.html">NavigationBarCustomization</a>, informationHeaderStyleCustomization: <a href="-text-style-customization/index.html">TextStyleCustomization</a>, informationTextStyleCustomization: <a href="-text-style-customization/index.html">TextStyleCustomization</a>, entryLabelStyleCustomization: <a href="-text-style-customization/index.html">TextStyleCustomization</a>, whitelistLabelStyleCustomization: <a href="-switch-customization/index.html">SwitchCustomization</a>, actionButtonStyleCustomization: <a href="-button-customization/index.html">ButtonCustomization</a>, alternativeButtonStyleCustomization: <a href="-button-customization/index.html">ButtonCustomization</a>, entryBoxStyleCustomization: <a href="-edit-text-customization/index.html">EditTextCustomization</a>, entrySelectorStyleCustomization: <a href="-selector-customization/index.html">SelectorCustomization</a>, footerCustomization: <a href="-footer-customization/index.html">FooterCustomization</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1612292634%2FClasslikes%2F1621435678" anchor-label="UICustomization" id="-1612292634%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="-1612292634%2FClasslikes%2F1621435678" anchor-label="UICustomization" id="-1612292634%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>Used to provide objects that specify user interface customizations for the 3D Secure 2 challenge screens.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-169260375%2FClasslikes%2F1621435678" anchor-label="Warning" id="-169260375%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-warning/index.html">Warning</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-169260375%2FClasslikes%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">sealed class <a href="-warning/index.html">Warning</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-169260375%2FClasslikes%2F1621435678" anchor-label="Warning" id="-169260375%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="-169260375%2FClasslikes%2F1621435678" anchor-label="Warning" id="-169260375%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>Represents a warning produced by the 3DS SDK, either due to potential security issues found, or to communicate a rejected configuration request.</div></div>
-</div>
-                    </div>
-                  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="1209707522%2FClasslikes%2F1621435678" anchor-label="AllStyleCustomization" id="1209707522%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-all-style-customization/index.html"><span>All</span><wbr></wbr><span>Style</span><wbr></wbr><span><span>Customization</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1209707522%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-all-style-customization/index.html">AllStyleCustomization</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html"><span class="token annotation builtin">ColorRes</span></a> </span><span class="token keyword">var </span>textColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/FontRes.html"><span class="token annotation builtin">FontRes</span></a> </span><span class="token keyword">var </span>textFont<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html"><span class="token annotation builtin">ColorRes</span></a> </span><span class="token keyword">var </span>tint<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">General customization for all elements that could be overridden by specific element customisation</p></div></div></div>
                 </div>
               </div>
-              <h2 class="">Functions</h2>
-              <div class="table" data-togglable="Functions"><a data-name="493767310%2FFunctions%2F1621435678" anchor-label="uiCustomization" id="493767310%2FFunctions%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="ui-customization.html">uiCustomization</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="493767310%2FFunctions%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">fun <a href="ui-customization.html">uiCustomization</a>(block: <a href="-u-i-customization/index.html">UICustomization</a>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>): <a href="-u-i-customization/index.html">UICustomization</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="493767310%2FFunctions%2F1621435678" anchor-label="uiCustomization" id="493767310%2FFunctions%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="493767310%2FFunctions%2F1621435678" anchor-label="uiCustomization" id="493767310%2FFunctions%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>Root DSL Method for <a href="-u-i-customization/index.html">UICustomization</a> setup</div></div>
-</div>
-                    </div>
-                  </div>
+            </div>
+          </div>
+<a data-name="1418047346%2FClasslikes%2F1621435678" anchor-label="AuthenticationCompleted" id="1418047346%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authentication-completed/index.html"><span>Authentication</span><wbr></wbr><span><span>Completed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1418047346%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-authentication-completed/index.html">AuthenticationCompleted</a> : <a href="-authentication-result/index.html">AuthenticationResult</a></div><div class="brief "><p class="paragraph">This class holds the details for the success result of the authentication process.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-328071083%2FClasslikes%2F1621435678" anchor-label="AuthenticationError" id="-328071083%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authentication-error/index.html"><span>Authentication</span><wbr></wbr><span><span>Error</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-328071083%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-authentication-error/index.html">AuthenticationError</a> : <a href="-authentication-result/index.html">AuthenticationResult</a></div><div class="brief "><p class="paragraph">This class holds the details for the error result of the authentication process.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1316809787%2FClasslikes%2F1621435678" anchor-label="AuthenticationErrorType" id="1316809787%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authentication-error-type/index.html"><span>Authentication</span><wbr></wbr><span>Error</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1316809787%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-authentication-error-type/index.html">AuthenticationErrorType</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-authentication-error-type/index.html">AuthenticationErrorType</a><span class="token operator">&gt; </span>, <a href="https://developer.android.com/reference/kotlin/android/os/Parcelable.html">Parcelable</a></div><div class="brief "><p class="paragraph">This enum holds the type of the error occurred during the authentication process.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-900063269%2FClasslikes%2F1621435678" anchor-label="AuthenticationParameters" id="-900063269%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authentication-parameters/index.html"><span>Authentication</span><wbr></wbr><span><span>Parameters</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-900063269%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-authentication-parameters/index.html">AuthenticationParameters</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>sessionId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>sessionSecret<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>scheme<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">The class used to provide input parameters required for an authentication request.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="472888072%2FClasslikes%2F1621435678" anchor-label="AuthenticationResult" id="472888072%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authentication-result/index.html"><span>Authentication</span><wbr></wbr><span><span>Result</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="472888072%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-authentication-result/index.html">AuthenticationResult</a> : <a href="https://developer.android.com/reference/kotlin/android/os/Parcelable.html">Parcelable</a></div><div class="brief "><p class="paragraph">This class holds the details for the result of the authentication process.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1667893984%2FClasslikes%2F1621435678" anchor-label="BackgroundCustomization" id="-1667893984%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-background-customization/index.html"><span>Background</span><wbr></wbr><span><span>Customization</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1667893984%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-background-customization/index.html">BackgroundCustomization</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html"><span class="token annotation builtin">ColorRes</span></a> </span><span class="token keyword">var </span>backgroundColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/DimenRes.html"><span class="token annotation builtin">DimenRes</span></a> </span><span class="token keyword">var </span>cornerRadius<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html"><span class="token annotation builtin">ColorRes</span></a> </span><span class="token keyword">var </span>borderColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/DimenRes.html"><span class="token annotation builtin">DimenRes</span></a> </span><span class="token keyword">var </span>borderWidth<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/DimenRes.html"><span class="token annotation builtin">DimenRes</span></a> </span><span class="token keyword">var </span>bgElevation<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Use this class to set the background style of a specified user interface element.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1433374244%2FClasslikes%2F1621435678" anchor-label="ButtonCustomization" id="1433374244%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-button-customization/index.html"><span>Button</span><wbr></wbr><span><span>Customization</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1433374244%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-button-customization/index.html">ButtonCustomization</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>buttonBackground<span class="token operator">: </span><a href="-background-customization/index.html">BackgroundCustomization</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>label<span class="token operator">: </span><a href="-text-style-customization/index.html">TextStyleCustomization</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Use this class to set the visual style of the main action button on a 3DS2 challenge screen.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1863802743%2FClasslikes%2F1621435678" anchor-label="EditTextCustomization" id="-1863802743%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-edit-text-customization/index.html"><span>Edit</span><wbr></wbr><span>Text</span><wbr></wbr><span><span>Customization</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1863802743%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-edit-text-customization/index.html">EditTextCustomization</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>input<span class="token operator">: </span><a href="-text-style-customization/index.html">TextStyleCustomization</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>editTextBackground<span class="token operator">: </span><a href="-background-customization/index.html">BackgroundCustomization</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Use this class to set the visual style of the challenge text entry box.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1720252979%2FClasslikes%2F1621435678" anchor-label="FooterCustomization" id="-1720252979%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-footer-customization/index.html"><span>Footer</span><wbr></wbr><span><span>Customization</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1720252979%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-footer-customization/index.html">FooterCustomization</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html"><span class="token annotation builtin">ColorRes</span></a> </span><span class="token keyword">var </span>expandIndicatorColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>labelStyleCustomization<span class="token operator">: </span><a href="-text-style-customization/index.html">TextStyleCustomization</a><span class="token operator"> = </span>TextStyleCustomization()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>textStyleCustomization<span class="token operator">: </span><a href="-text-style-customization/index.html">TextStyleCustomization</a><span class="token operator"> = </span>TextStyleCustomization()</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Use this class to set the visual style of footer section, at the bottom of a 3DS2 challenge screen. This section contains information text provided by the card issuer. Each piece of information is expandable, with just the label and an expand indicator showing until the user expands the section to reveal the body text within.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="291316926%2FClasslikes%2F1621435678" anchor-label="LabelCustomization" id="291316926%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-label-customization/index.html"><span>Label</span><wbr></wbr><span><span>Customization</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="291316926%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">class </span><a href="-label-customization/index.html">LabelCustomization</a></div><div class="brief "><p class="paragraph">Generic class used to customize the visual style of text on the challenge screen.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-119561495%2FClasslikes%2F1621435678" anchor-label="NavigationBarCustomization" id="-119561495%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-navigation-bar-customization/index.html"><span>Navigation</span><wbr></wbr><span>Bar</span><wbr></wbr><span><span>Customization</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-119561495%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-navigation-bar-customization/index.html">NavigationBarCustomization</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html"><span class="token annotation builtin">ColorRes</span></a> </span><span class="token keyword">var </span>backgroundColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/DimenRes.html"><span class="token annotation builtin">DimenRes</span></a> </span><span class="token keyword">var </span>panelElevation<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>headingStyleCustomization<span class="token operator">: </span><a href="-text-customization/index.html">TextCustomization</a><span class="token operator"> = </span>TextCustomization()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>buttonStyleCustomization<span class="token operator">: </span><a href="-text-customization/index.html">TextCustomization</a><span class="token operator"> = </span>TextCustomization()</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Use this class to provide objects that specify user interface customizations for the navigation bar that appears at the top of the challenge screen for 3DS1 and 3DS2, and includes the screen title and the Cancel button.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1888763910%2FClasslikes%2F1621435678" anchor-label="ResultType" id="1888763910%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-result-type/index.html"><span>Result</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1888763910%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">class </span><a href="-result-type/index.html">ResultType</a></div><div class="brief "><p class="paragraph">This enum holds the type of the result for the authentication process.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="876878865%2FClasslikes%2F1621435678" anchor-label="SelectorCustomization" id="876878865%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-selector-customization/index.html"><span>Selector</span><wbr></wbr><span><span>Customization</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="876878865%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-selector-customization/index.html">SelectorCustomization</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html"><span class="token annotation builtin">ColorRes</span></a> </span><span class="token keyword">var </span>selectorColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>label<span class="token operator">: </span><a href="-text-style-customization/index.html">TextStyleCustomization</a><span class="token operator"> = </span>TextStyleCustomization()</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Use this class to set the visual style of options that users can select during a single-select or a multi-select challenge.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-313712704%2FClasslikes%2F1621435678" anchor-label="Severity" id="-313712704%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-severity/index.html"><span><span>Severity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-313712704%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-severity/index.html">Severity</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-severity/index.html">Severity</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">The severity levels of warnings produced by the SDK.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-186708826%2FClasslikes%2F1621435678" anchor-label="SwitchCustomization" id="-186708826%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-switch-customization/index.html"><span>Switch</span><wbr></wbr><span><span>Customization</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-186708826%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-switch-customization/index.html">SwitchCustomization</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html"><span class="token annotation builtin">ColorRes</span></a> </span><span class="token keyword">var </span>textColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/FontRes.html"><span class="token annotation builtin">FontRes</span></a> </span><span class="token keyword">var </span>textFont<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html"><span class="token annotation builtin">ColorRes</span></a> </span><span class="token keyword">var </span>thumbColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="-label-customization/index.html">LabelCustomization</a></div><div class="brief "><p class="paragraph">Use this class to set the visual style of the ‘allow list’ switch that may appear on a 3DS2 challenge screen. Users can choose to add a merchant to their card issuer’s allow list to ensure they are trusted for future transactions.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1530467105%2FClasslikes%2F1621435678" anchor-label="TextCustomization" id="-1530467105%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-customization/index.html"><span>Text</span><wbr></wbr><span><span>Customization</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1530467105%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-text-customization/index.html">TextCustomization</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html"><span class="token annotation builtin">ColorRes</span></a> </span><span class="token keyword">var </span>textColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/FontRes.html"><span class="token annotation builtin">FontRes</span></a> </span><span class="token keyword">var </span>textFont<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/StringRes.html"><span class="token annotation builtin">StringRes</span></a> </span><span class="token keyword">var </span>text<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="-label-customization/index.html">LabelCustomization</a></div><div class="brief "><p class="paragraph">Use this class to customize the style of the text in the Navigation Bar used across 3DS1 and 3DS2 challenge screens, as well as the actual text displayed as the title.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1426538418%2FClasslikes%2F1621435678" anchor-label="TextStyleCustomization" id="-1426538418%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-style-customization/index.html"><span>Text</span><wbr></wbr><span>Style</span><wbr></wbr><span><span>Customization</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1426538418%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-text-style-customization/index.html">TextStyleCustomization</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html"><span class="token annotation builtin">ColorRes</span></a> </span><span class="token keyword">var </span>textColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/FontRes.html"><span class="token annotation builtin">FontRes</span></a> </span><span class="token keyword">var </span>textFont<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="-label-customization/index.html">LabelCustomization</a></div><div class="brief "><p class="paragraph">Use this class to customize the visual style of the text on the challenge screen. There are separate TextStyleCustomization classes for the challenge information header, the challenge information text, the label for the challenge entry form and the label for the whitelist selection.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1612292634%2FClasslikes%2F1621435678" anchor-label="UICustomization" id="-1612292634%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-u-i-customization/index.html"><span><span>UICustomization</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1612292634%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-u-i-customization/index.html">UICustomization</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>navigationBarCustomization<span class="token operator">: </span><a href="-navigation-bar-customization/index.html">NavigationBarCustomization</a><span class="token operator"> = </span>NavigationBarCustomization()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>informationHeaderStyleCustomization<span class="token operator">: </span><a href="-text-style-customization/index.html">TextStyleCustomization</a><span class="token operator"> = </span>TextStyleCustomization()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>informationTextStyleCustomization<span class="token operator">: </span><a href="-text-style-customization/index.html">TextStyleCustomization</a><span class="token operator"> = </span>TextStyleCustomization()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>entryLabelStyleCustomization<span class="token operator">: </span><a href="-text-style-customization/index.html">TextStyleCustomization</a><span class="token operator"> = </span>TextStyleCustomization()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>whitelistLabelStyleCustomization<span class="token operator">: </span><a href="-switch-customization/index.html">SwitchCustomization</a><span class="token operator"> = </span>SwitchCustomization()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>actionButtonStyleCustomization<span class="token operator">: </span><a href="-button-customization/index.html">ButtonCustomization</a><span class="token operator"> = </span>ButtonCustomization.actionButton()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>alternativeButtonStyleCustomization<span class="token operator">: </span><a href="-button-customization/index.html">ButtonCustomization</a><span class="token operator"> = </span>ButtonCustomization.alternateButton()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>entryBoxStyleCustomization<span class="token operator">: </span><a href="-edit-text-customization/index.html">EditTextCustomization</a><span class="token operator"> = </span>EditTextCustomization.default()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>entrySelectorStyleCustomization<span class="token operator">: </span><a href="-selector-customization/index.html">SelectorCustomization</a><span class="token operator"> = </span>SelectorCustomization()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>footerCustomization<span class="token operator">: </span><a href="-footer-customization/index.html">FooterCustomization</a><span class="token operator"> = </span>FooterCustomization()</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Used to provide objects that specify user interface customizations for the 3D Secure 2 challenge screens.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-169260375%2FClasslikes%2F1621435678" anchor-label="Warning" id="-169260375%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-warning/index.html"><span><span>Warning</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-169260375%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">class </span><a href="-warning/index.html">Warning</a></div><div class="brief "><p class="paragraph">Represents a warning produced by the 3DS SDK, either due to potential security issues found, or to communicate a rejected configuration request.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="493767310%2FFunctions%2F1621435678" anchor-label="uiCustomization" id="493767310%2FFunctions%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ui-customization.html"><span>ui</span><wbr></wbr><span><span>Customization</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="493767310%2FFunctions%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="ui-customization.html"><span class="token function">uiCustomization</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><a href="-u-i-customization/index.html">UICustomization</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-u-i-customization/index.html">UICustomization</a></div><div class="brief "><p class="paragraph">Root DSL Method for <a href="-u-i-customization/index.html">UICustomization</a> setup</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </body>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2026 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
-
