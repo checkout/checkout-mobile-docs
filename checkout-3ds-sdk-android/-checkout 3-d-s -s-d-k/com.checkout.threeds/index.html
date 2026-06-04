@@ -1,90 +1,133 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html class="no-js">
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>com.checkout.threeds</title>
-<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script><script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../styles/style.css" rel="Stylesheet"><link href="../../styles/logo-styles.css" rel="Stylesheet"><link href="../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../scripts/main.js" async="async"></script>  </head>
-  <body>
-    <div id="container">
-      <div id="leftColumn"><a href="../../index.html">
-          <div id="logo"></div>
-        </a>
-        <div id="paneSearch"></div>
-        <div id="sideMenu"></div>
-      </div>
-      <div id="main">
-        <div id="leftToggler"><span class="icon-toggler"></span></div>
-<script type="text/javascript" src="../../scripts/main.js"></script>        <div class="main-content" id="content" pageIds="Checkout 3DS SDK::com.checkout.threeds////PointingToDeclaration//1621435678">
-          <div class="navigation-wrapper" id="navigation-wrapper">
-            <div class="breadcrumbs"><a href="../../index.html">Checkout 3DS SDK</a>/<a href="index.html">com.checkout.threeds</a></div>
-            <div class="pull-right d-flex">
-              <div id="searchBar"></div>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../index.html">
+                            Checkout 3DS SDK
+                    </a>
+            </div>
+            <div class="library-version">
+3.4.3            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":threeds:dokkaHtml/main">Checkout.com 3DS</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageIds="Checkout 3DS SDK::com.checkout.threeds////PointingToDeclaration//1621435678">
+  <div class="breadcrumbs"><a href="../../index.html">Checkout 3DS SDK</a><span class="delimiter">/</span><span class="current">com.checkout.threeds</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="1567530135%2FClasslikes%2F1621435678" anchor-label="AuthenticationCallback" id="1567530135%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authentication-callback/index.html"><span>Authentication</span><wbr></wbr><span><span>Callback</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1567530135%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token keyword">interface </span><a href="-authentication-callback/index.html">AuthenticationCallback</a></div><div class="brief "><p class="paragraph">The AuthenticationCallback listener to be invoked with the result of the authentication process.</p></div></div></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="cover ">
-            <h1 class="cover"><span>Package com.</span><wbr></wbr><span>checkout.</span><wbr></wbr><span>threeds</span></h1>
-          </div>
-          <div class="tabbedcontent">
-            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button></div>
-            <div class="tabs-section-body">
-              <h2 class="">Types</h2>
-              <div class="table" data-togglable="Types"><a data-name="1567530135%2FClasslikes%2F1621435678" anchor-label="AuthenticationCallback" id="1567530135%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-authentication-callback/index.html">AuthenticationCallback</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1567530135%2FClasslikes%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">fun fun interface <a href="-authentication-callback/index.html">AuthenticationCallback</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="1567530135%2FClasslikes%2F1621435678" anchor-label="AuthenticationCallback" id="1567530135%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="1567530135%2FClasslikes%2F1621435678" anchor-label="AuthenticationCallback" id="1567530135%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>The AuthenticationCallback listener to be invoked with the result of the authentication process.</div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
 <a data-name="-1967828389%2FClasslikes%2F1621435678" anchor-label="Checkout3DSService" id="-1967828389%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-checkout3-d-s-service/index.html">Checkout3DSService</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1967828389%2FClasslikes%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">class <a href="-checkout3-d-s-service/index.html">Checkout3DSService</a> <span>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html">JvmOverloads</a>() </span>constructor(context: <a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a>, environment: <a href="-environment/index.html">Environment</a>, locale: <a href="https://developer.android.com/reference/kotlin/java/util/Locale.html">Locale</a>, uiCustomization: <a href="../com.checkout.threeds.domain.model/-u-i-customization/index.html">UICustomization</a>?, appUrl: <a href="https://developer.android.com/reference/kotlin/android/net/Uri.html">Uri</a>?)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="-1967828389%2FClasslikes%2F1621435678" anchor-label="Checkout3DSService" id="-1967828389%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="-1967828389%2FClasslikes%2F1621435678" anchor-label="Checkout3DSService" id="-1967828389%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>This is the main class of the SDK that performs payment authentication with the authenticate method.</div></div>
-</div>
-                    </div>
-                  </div>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-checkout3-d-s-service/index.html"><span><span>Checkout3DSService</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1967828389%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-checkout3-d-s-service/index.html">Checkout3DSService</a> <span><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a> </span><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">environment<span class="token operator">: </span><a href="-environment/index.html">Environment</a><span class="token operator"> = </span>Environment.PRODUCTION<span class="token punctuation">, </span></span><span class="parameter ">locale<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Locale.html">Locale</a><span class="token operator"> = </span>Locale.getDefault()<span class="token punctuation">, </span></span><span class="parameter ">uiCustomization<span class="token operator">: </span><a href="../com.checkout.threeds.domain.model/-u-i-customization/index.html">UICustomization</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">appUrl<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/net/Uri.html">Uri</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">This is the main class of the SDK that performs payment authentication with the authenticate method. It only needs to be initialized once for the lifetime of the application, and is initialized with a set of constructor parameters.</p></div></div></div>
                 </div>
+              </div>
+            </div>
+          </div>
 <a data-name="415999163%2FClasslikes%2F1621435678" anchor-label="Environment" id="415999163%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-environment/index.html">Environment</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="415999163%2FClasslikes%2F1621435678"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace">enum <a href="-environment/index.html">Environment</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a>&lt;<a href="-environment/index.html">Environment</a>&gt; <span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<a data-name="415999163%2FClasslikes%2F1621435678" anchor-label="Environment" id="415999163%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a><div class="brief "><a data-name="415999163%2FClasslikes%2F1621435678" anchor-label="Environment" id="415999163%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>The Checkout.com environment that the SDK will connect to.</div></div>
-</div>
-                    </div>
-                  </div>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-environment/index.html"><span><span>Environment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="415999163%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-environment/index.html">Environment</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-environment/index.html">Environment</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">The Checkout.com environment that the SDK will connect to.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
       </div>
     </div>
-  </body>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2026 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
-

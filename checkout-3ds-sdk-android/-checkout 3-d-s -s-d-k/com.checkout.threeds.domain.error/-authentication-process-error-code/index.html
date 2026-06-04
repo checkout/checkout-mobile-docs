@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>AuthenticationProcessErrorCode</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            Checkout 3DS SDK
+                    </a>
+            </div>
+            <div class="library-version">
+3.4.3            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":threeds:dokkaHtml/main">Checkout.com 3DS</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="Checkout 3DS SDK::com.checkout.threeds.domain.error/AuthenticationProcessErrorCode///PointingToDeclaration//1621435678">
+  <div class="breadcrumbs"><a href="../../../index.html">Checkout 3DS SDK</a><span class="delimiter">/</span><a href="../index.html">com.checkout.threeds.domain.error</a><span class="delimiter">/</span><span class="current">AuthenticationProcessErrorCode</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Authentication</span><wbr></wbr><span>Process</span><wbr></wbr><span>Error</span><wbr></wbr><span><span>Code</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">class </span><a href="index.html">AuthenticationProcessErrorCode</a> : <a href="../-base-error-code/index.html">BaseErrorCode</a></div><p class="paragraph">Sealed class representing authentication process error codes with their public messages.</p><p class="paragraph">This class defines error codes related to the authentication process in the 3DS SDK. Each error code object contains a unique error code identifier and a public message that can be safely displayed to users.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>code</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The error code string identifier.</p></div></div></div></div><div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>public</span><wbr></wbr><span><span>Message</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The public-facing error message that can be safely displayed to users.</p></div></div></div></div></div><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-e1002_-challenge_cancelled/index.html">E1002_Challenge_cancelled</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-e1003_-challenge_timeout/index.html">E1003_Challenge_timeout</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-e1005_protocol_version_unsupported/index.html">E1005_protocol_version_unsupported</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-e1006_duplicate_authentication_request/index.html">E1006_duplicate_authentication_request</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-e1007_concurrent_authentication_request/index.html">E1007_concurrent_authentication_request</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-e1010_duplicate_sdk_initialised/index.html">E1010_duplicate_sdk_initialised</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-e1011_sdk_not_initialised/index.html">E1011_sdk_not_initialised</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-2036545808%2FClasslikes%2F1621435678" anchor-label="E1002_Challenge_cancelled" id="-2036545808%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-e1002_-challenge_cancelled/index.html"><span><span>E1002_Challenge_cancelled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2036545808%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-e1002_-challenge_cancelled/index.html">E1002_Challenge_cancelled</a> : <a href="index.html">AuthenticationProcessErrorCode</a></div><div class="brief "><p class="paragraph">The cardholder cancelled the challenge before completing it.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="204356159%2FClasslikes%2F1621435678" anchor-label="E1003_Challenge_timeout" id="204356159%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-e1003_-challenge_timeout/index.html"><span><span>E1003_Challenge_timeout</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="204356159%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-e1003_-challenge_timeout/index.html">E1003_Challenge_timeout</a> : <a href="index.html">AuthenticationProcessErrorCode</a></div><div class="brief "><p class="paragraph">The challenge was not completed within the allowed time and timed out.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="373156281%2FClasslikes%2F1621435678" anchor-label="E1005_protocol_version_unsupported" id="373156281%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-e1005_protocol_version_unsupported/index.html"><span><span>E1005_protocol_version_unsupported</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="373156281%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-e1005_protocol_version_unsupported/index.html">E1005_protocol_version_unsupported</a> : <a href="index.html">AuthenticationProcessErrorCode</a></div><div class="brief "><p class="paragraph">The 3DS protocol version returned by the issuer is not supported by the SDK.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1046261829%2FClasslikes%2F1621435678" anchor-label="E1006_duplicate_authentication_request" id="1046261829%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-e1006_duplicate_authentication_request/index.html"><span><span>E1006_duplicate_authentication_request</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1046261829%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-e1006_duplicate_authentication_request/index.html">E1006_duplicate_authentication_request</a> : <a href="index.html">AuthenticationProcessErrorCode</a></div><div class="brief "><p class="paragraph">An authentication request was made that duplicates one already in progress for the same session.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1788898864%2FClasslikes%2F1621435678" anchor-label="E1007_concurrent_authentication_request" id="1788898864%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-e1007_concurrent_authentication_request/index.html"><span><span>E1007_concurrent_authentication_request</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1788898864%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-e1007_concurrent_authentication_request/index.html">E1007_concurrent_authentication_request</a> : <a href="index.html">AuthenticationProcessErrorCode</a></div><div class="brief "><p class="paragraph">A concurrent authentication request was made while another authentication is still in progress.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-243084012%2FClasslikes%2F1621435678" anchor-label="E1010_duplicate_sdk_initialised" id="-243084012%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-e1010_duplicate_sdk_initialised/index.html"><span><span>E1010_duplicate_sdk_initialised</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-243084012%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-e1010_duplicate_sdk_initialised/index.html">E1010_duplicate_sdk_initialised</a> : <a href="index.html">AuthenticationProcessErrorCode</a></div><div class="brief "><p class="paragraph">The SDK was initialised while an initialisation for the same session was already active.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2078602923%2FClasslikes%2F1621435678" anchor-label="E1011_sdk_not_initialised" id="2078602923%2FClasslikes%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-e1011_sdk_not_initialised/index.html"><span><span>E1011_sdk_not_initialised</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2078602923%2FClasslikes%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-e1011_sdk_not_initialised/index.html">E1011_sdk_not_initialised</a> : <a href="index.html">AuthenticationProcessErrorCode</a></div><div class="brief "><p class="paragraph">An operation was attempted before the SDK had been initialised.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="490065204%2FProperties%2F1621435678" anchor-label="code" id="490065204%2FProperties%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="code.html"><span><span>code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="490065204%2FProperties%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="com.google.gson.annotations/SerializedName///PointingToDeclaration/"><span class="token annotation builtin">SerializedName</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;code&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="code.html">code</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">The error code string identifier.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="148788699%2FProperties%2F1621435678" anchor-label="publicMessage" id="148788699%2FProperties%2F1621435678" data-filterable-set=":threeds:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":threeds:dokkaHtml/main" data-filterable-set=":threeds:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="public-message.html"><span>public</span><wbr></wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="148788699%2FProperties%2F1621435678"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":threeds:dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="com.google.gson.annotations/SerializedName///PointingToDeclaration/"><span class="token annotation builtin">SerializedName</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;message&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="public-message.html">publicMessage</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">The public-facing error message that can be safely displayed to users.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2026 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
