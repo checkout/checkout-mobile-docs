@@ -1,9 +1,16 @@
 /*
- * Copyright 2014-2023 JetBrains s.r.o. Use of this source code is governed by the Apache 2.0 license.
+ * Overrides Dokka's default logo-styles.css.
+ * Uses the Checkout.com app icon (white mark on a #006CFF tile, taken from the
+ * iOS sample app) and renders it as a rounded app-icon tile in the header.
  */
-
 :root {
-    --dokka-logo-image-url: url('../images/logo-icon.svg');
-    --dokka-logo-height: 50px;
-    --dokka-logo-width: 50px;
+    --dokka-logo-image-url: url('../images/logo-icon.png');
+    --dokka-logo-height: 36px;
+    --dokka-logo-width: 36px;
+}
+
+/* Round the corners of the icon tile in the header. */
+.library-name--link::before {
+    background-size: cover;
+    border-radius: 8px;
 }
