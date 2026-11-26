@@ -1,229 +1,243 @@
 {
   "warnings": [
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/Checkout3DSService+Constants.swift",
+      "file": "Sources/Checkout3DSService+Constants.swift",
       "line": 12,
       "symbol": "Checkout3DSService.productVersion",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/Checkout3DSService+Constants.swift",
+      "file": "Sources/Checkout3DSService+Constants.swift",
       "line": 14,
       "symbol": "Checkout3DSService.Constants",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/Errors/AuthenticationError.swift",
-      "line": 280,
+      "file": "Sources/Errors/AuthenticationError.swift",
+      "line": 282,
       "symbol": "AuthenticationError.message",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/Networking/Models/Challenge/ChallengeResponse+MessageExtension.swift",
+      "file": "Sources/Errors/ProtocolErrorEvent.swift",
+      "line": 74,
+      "symbol": "ProtocolErrorEvent.isEqual(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "Sources/Errors/ProtocolErrorEvent.swift",
+      "line": 87,
+      "symbol": "ProtocolErrorEvent.hash",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "Sources/Networking/Models/Challenge/ChallengeResponse+MessageExtension.swift",
       "line": 57,
       "symbol": "MessageExtensionData.ChallengeData",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/Networking/Models/Challenge/ChallengeResponse+MessageExtension.swift",
+      "file": "Sources/Networking/Models/Challenge/ChallengeResponse+MessageExtension.swift",
       "line": 146,
       "symbol": "MessageExtension.mastercard",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/Standalone/Constant/Standalone3DSServiceConstants.swift",
+      "file": "Sources/Standalone/Constant/Standalone3DSServiceConstants.swift",
       "line": 12,
       "symbol": "Standalone3DSService.Constants",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/Standalone/Model/AuthenticationResult.swift",
+      "file": "Sources/Standalone/Model/AuthenticationResult.swift",
       "line": 11,
       "symbol": "AuthenticationResult",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/Standalone/Model/ThreeDS2ServiceConfiguration.swift",
+      "file": "Sources/Standalone/Model/ThreeDS2ServiceConfiguration.swift",
       "line": 77,
       "symbol": "ThreeDS2ServiceConfiguration.init(configParameters:locale:uiCustomization:appURL:challengeTimeout:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/UI/UICustomizing/Customizations/ButtonCustomization.swift",
+      "file": "Sources/UI/UICustomizing/Customizations/ButtonCustomization.swift",
       "line": 31,
       "symbol": "ButtonCustomization.shadowColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/UI/UICustomizing/Customizations/ButtonCustomization.swift",
+      "file": "Sources/UI/UICustomizing/Customizations/ButtonCustomization.swift",
       "line": 33,
       "symbol": "ButtonCustomization.shadowOffset",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/UI/UICustomizing/Customizations/ButtonCustomization.swift",
+      "file": "Sources/UI/UICustomizing/Customizations/ButtonCustomization.swift",
       "line": 35,
       "symbol": "ButtonCustomization.shadowRadius",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/UI/UICustomizing/Customizations/ButtonCustomization.swift",
+      "file": "Sources/UI/UICustomizing/Customizations/ButtonCustomization.swift",
       "line": 37,
       "symbol": "ButtonCustomization.shadowOpacity",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
+      "file": "Sources/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
       "line": 11,
       "symbol": "ButtonCustomizations",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
+      "file": "Sources/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
       "line": 13,
       "symbol": "ButtonCustomizations.verifyButtonCustomization",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
+      "file": "Sources/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
       "line": 14,
       "symbol": "ButtonCustomizations.continueFlowButtonCustomization",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
+      "file": "Sources/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
       "line": 15,
       "symbol": "ButtonCustomizations.nextButtonCustomization",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
+      "file": "Sources/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
       "line": 16,
       "symbol": "ButtonCustomizations.cancelButtonCustomization",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
+      "file": "Sources/UI/UICustomizing/Customizations/ButtonCustomizations.swift",
       "line": 17,
       "symbol": "ButtonCustomizations.resendButtonCustomization",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/UI/UICustomizing/Customizations/WhitelistCustomization.swift",
+      "file": "Sources/UI/UICustomizing/Customizations/WhitelistCustomization.swift",
       "line": 37,
       "symbol": "DefaultWhitelistCustomization.init(font:textColor:switchTintColor:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/Utils/PasteboardCommunication.swift",
+      "file": "Sources/Utils/PasteboardCommunication.swift",
       "line": 12,
       "symbol": "NSNotification.Name.NSPasteboardDidChange",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/Utils/PasteboardCommunication.swift",
+      "file": "Sources/Utils/PasteboardCommunication.swift",
       "line": 15,
       "symbol": "PasteboardAction",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/Utils/PasteboardCommunication.swift",
+      "file": "Sources/Utils/PasteboardCommunication.swift",
       "line": 16,
       "symbol": "PasteboardAction.voiceOver(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/Utils/PasteboardCommunication.swift",
+      "file": "Sources/Utils/PasteboardCommunication.swift",
       "line": 18,
       "symbol": "PasteboardAction.CodingKeys",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/Utils/PasteboardCommunication.swift",
+      "file": "Sources/Utils/PasteboardCommunication.swift",
       "line": 19,
       "symbol": "PasteboardAction.CodingKeys.voiceOver",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/Utils/PasteboardCommunication.swift",
+      "file": "Sources/Utils/PasteboardCommunication.swift",
       "line": 41,
       "symbol": "PasteboardAction.PasteboardActionError",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/Utils/PasteboardCommunication.swift",
+      "file": "Sources/Utils/PasteboardCommunication.swift",
       "line": 42,
       "symbol": "PasteboardAction.PasteboardActionError.cannotDecode",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/Utils/PasteboardCommunication.swift",
+      "file": "Sources/Utils/PasteboardCommunication.swift",
       "line": 46,
       "symbol": "VoiceOverAction",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/Utils/PasteboardCommunication.swift",
+      "file": "Sources/Utils/PasteboardCommunication.swift",
       "line": 47,
       "symbol": "VoiceOverAction.focusElement(accessibilityIdentifier:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/Utils/PasteboardCommunication.swift",
+      "file": "Sources/Utils/PasteboardCommunication.swift",
       "line": 49,
       "symbol": "VoiceOverAction.CodingKeys",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/Utils/PasteboardCommunication.swift",
+      "file": "Sources/Utils/PasteboardCommunication.swift",
       "line": 50,
       "symbol": "VoiceOverAction.CodingKeys.focusElement",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/Utils/PasteboardCommunication.swift",
+      "file": "Sources/Utils/PasteboardCommunication.swift",
       "line": 72,
       "symbol": "VoiceOverAction.VoiceOverActionError",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios/Sources/Utils/PasteboardCommunication.swift",
+      "file": "Sources/Utils/PasteboardCommunication.swift",
       "line": 73,
       "symbol": "VoiceOverAction.VoiceOverActionError.cannotDecode",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/Roman.Chugunov/Documents/GitHub/3ds2-sdk-ios"
+  "source_directory": "."
 }
