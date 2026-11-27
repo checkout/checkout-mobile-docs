@@ -95,6 +95,9 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/DefaultWhitelistCustomization.html">DefaultWhitelistCustomization</a>
               </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ProtocolErrorEvent.html">ProtocolErrorEvent</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -244,6 +247,7 @@
 
 <ul>
 <li><a href="#checkoutcoms-3ds-server">Checkout.com&rsquo;s 3DS server</a></li>
+<li><a href="#merchant-specific-subdomain-mssd">Merchant-specific subdomain (MSSD)</a></li>
 <li><a href="#any-3ds-provider">Any 3DS provider</a></li>
 </ul></li>
 <li><a href="#payment-authorisation">Payment Authorisation</a></li>
@@ -258,7 +262,7 @@
 <h2 id='features' class='heading'>Features</h2>
 
 <ul>
-<li>Supports <strong>3D Secure protocols 2.1.0 and 2.2.0.</strong></li>
+<li>Supports <strong>3D Secure protocol 2.2.0.</strong></li>
 <li>Presents <strong>native 3DS2 challenge screens to the user, with styling that you can customise</strong> to best fit your apps and branding.</li>
 <li>Optionally <strong>falls back to 3DS1</strong> when 3DS2 is not available, returning the same authentication result to your app as for 3DS2. (This option can be configured by Checkout.com for your account.)</li>
 <li>Supports a <strong>range of local languages and accessibility needs</strong>, and allows you to set your own string translations.</li>
@@ -267,7 +271,7 @@
 <h2 id='minimum-requirements' class='heading'>Minimum Requirements</h2>
 
 <ul>
-<li>The 3DS SDK for iOS requires Xcode 15.3 and above with Swift version 5.10 and above, and supports apps targeting iOS 13.0 and above. It also supports Objective-C. There are two ways to integrate our 3DS SDK — using <a href="#checkoutcoms-3ds-server">Checkout.com&rsquo;s 3DS server</a> or <a href="#any-3ds-provider">any 3DS provider</a>.</li>
+<li>The 3DS SDK for iOS requires Xcode 16.1 and above with Swift version 6.1.2 and above, and supports apps targeting iOS 15.0 and above. It also supports Objective-C. There are two ways to integrate our 3DS SDK — using <a href="#checkoutcoms-3ds-server">Checkout.com&rsquo;s 3DS server</a> or <a href="#any-3ds-provider">any 3DS provider</a>.</li>
 <li>Discontinued support for Intel machines (x86_64) — arm64 only.</li>
 </ul>
 <h2 id='installation' class='heading'>Installation</h2>
@@ -322,6 +326,58 @@
 <p>👉&nbsp;&nbsp;<a href="https://www.checkout.com/docs/risk-management/3d-secure/sessions/non-hosted-sessions/3d-secure-mobile-sdks">See the Integration Guide with Code Examples</a> for full details.</p>
 
 <p>📚&nbsp;&nbsp;<a href="https://checkout.github.io/checkout-mobile-docs/checkout-3ds-sdk-ios/index.html">Read the reference documentation</a></p>
+<h3 id='merchant-specific-subdomain-mssd' class='heading'>Merchant-specific subdomain (MSSD)</h3>
+
+<p>Checkout.com routes API traffic by host. Every client created on or after <strong>1 October 2026</strong> must call its merchant-specific subdomain instead of the shared host. Server-side requests made with an API key are rejected on the shared host with HTTP 403 <code>base_url_invalid</code>. Set the prefix in the SDK too, so its Sessions API calls use the same host as the rest of your integration:</p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Environment</th>
+<th style="text-align: left">Shared host (clients created before 1 October 2026)</th>
+<th style="text-align: left">Merchant-specific host</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">Production</td>
+<td style="text-align: left"><code>api.checkout.com</code></td>
+<td style="text-align: left"><code>{prefix}.api.checkout.com</code></td>
+</tr>
+<tr>
+<td style="text-align: left">Sandbox</td>
+<td style="text-align: left"><code>api.sandbox.checkout.com</code></td>
+<td style="text-align: left"><code>{prefix}.api.sandbox.checkout.com</code></td>
+</tr>
+</tbody></table>
+
+<p><strong>Deriving your prefix.</strong> <code>{prefix}</code> is the first 8 characters of your <code>client_id</code> after <code>cli_</code>. For example, <code>cli_abcd1234efgh5678ijkl9012mn</code> gives the prefix <code>abcd1234</code> and the production host <code>abcd1234.api.checkout.com</code>. Your production and sandbox client ids differ, so their prefixes differ too: pass the prefix that matches the <code>environment</code> you initialise the SDK with. It is the same value you already use for your server-side <code>base_url_prefix</code>.</p>
+
+<p>👉&nbsp;&nbsp;<a href="https://api-reference.checkout.com/#section/Base-URLs">Base URLs in the API reference</a></p>
+
+<p>Pass the prefix to <code><a href="Classes/Checkout3DSService.html">Checkout3DSService</a></code> when you create it. Only the prefix is accepted, never a host or URL:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">checkout3DS</span> <span class="o">=</span> <span class="kt">Checkout3DSService</span><span class="p">(</span>
+    <span class="nv">environment</span><span class="p">:</span> <span class="o">.</span><span class="n">production</span><span class="p">,</span>
+    <span class="nv">uiCustomization</span><span class="p">:</span> <span class="n">uiCustomization</span><span class="p">,</span>
+    <span class="nv">appURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"myapp://my-app-url"</span><span class="p">)</span><span class="o">!</span><span class="p">,</span>
+    <span class="nv">baseURLPrefix</span><span class="p">:</span> <span class="s">"abcd1234"</span>
+<span class="p">)</span>
+</code></pre>
+<pre class="highlight objective_c"><code><span class="n">Checkout3DSService</span> <span class="o">*</span><span class="n">checkout3DS</span> <span class="o">=</span>
+    <span class="p">[[</span><span class="n">Checkout3DSService</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">initWithEnvironment</span><span class="p">:</span><span class="n">Checkout3DSEnvironmentProduction</span>
+                                             <span class="nl">locale:</span><span class="p">[</span><span class="n">NSLocale</span> <span class="nf">autoupdatingCurrentLocale</span><span class="p">]</span>
+                                    <span class="nl">uiCustomization:</span><span class="n">uiCustomization</span>
+                                             <span class="nl">appURL:</span><span class="p">[</span><span class="n">NSURL</span> <span class="nf">URLWithString</span><span class="p">:</span><span class="s">@"myapp://my-app-url"</span><span class="p">]</span>
+                                      <span class="nl">baseURLPrefix:</span><span class="s">@"abcd1234"</span><span class="p">];</span>
+</code></pre>
+
+<p>Behaviour:</p>
+
+<ul>
+<li><strong>Omitted (<code>nil</code>)</strong> – the SDK keeps calling the shared hosts exactly as before. Clients created before 1 October 2026 can leave it unset.</li>
+<li><strong>Set</strong> – the three Sessions API calls the SDK makes (get session, collect data, complete) go to the merchant-specific host. The challenge itself is exchanged with the card issuer&rsquo;s ACS at the URL returned by Checkout.com, which is not affected.</li>
+<li><strong>Invalid</strong> – the value must be exactly 8 letters or digits, <code>^[A-Za-z0-9]{8}$</code>. An empty string, a full host (<code>abcd1234.api.checkout.com</code>), a path, whitespace, a hyphen or underscore, or any other length is rejected: <code>authenticate</code> completes with <code><a href="Enums/AuthenticationError.html#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInvalidBaseURLPrefix">AuthenticationError.invalidBaseURLPrefix</a></code> (code <code>1012</code>) before any network call is made. The value you supplied is never included in the error message or in the SDK&rsquo;s logs.</li>
+<li><strong>Rejected by Checkout.com</strong> – if the Sessions API answers <code>403 base_url_invalid</code> (the prefix is missing or is not the one issued for this client), <code>authenticate</code> completes with the same <code><a href="Enums/AuthenticationError.html#/c:@M@Checkout3DS@E@Checkout3DSAuthenticationError@Checkout3DSAuthenticationErrorInvalidBaseURLPrefix">AuthenticationError.invalidBaseURLPrefix</a></code> (code <code>1012</code>). Checkout.com does not currently apply this check to the session-secret calls the SDK makes, so do not rely on this error to detect a missing prefix. Set it for every client created on or after 1 October 2026, and check that it matches the <code>client_id</code> of the account that created the session.</li>
+<li><strong>Standalone integration</strong> – <code><a href="Enums/Standalone3DSService.html">Standalone3DSService</a></code> talks only to your 3DS server and the ACS, so it has no <code>baseURLPrefix</code>. Apply the merchant-specific host to your own server&rsquo;s Checkout.com calls instead.</li>
+</ul>
 <h3 id='any-3ds-provider' class='heading'>Any 3DS provider</h3>
 
 <p>Standalone 3DS allows our SDKs to be used with any Authentication provider, be it Checkout.com or otherwise. This is a higher touch integration that breaks up the 3DS flow more granularly. In order to integrate with the Standalone 3DS service:</p>
@@ -471,8 +527,8 @@ standalone3DSService?.cleanUp()
 <p>Our iOS SDK depends on some external libraries:</p>
 
 <ul>
-<li>To help maintain security, we use <a href="https://github.com/airsidemobile/JOSESwift">JOSESwift</a>.</li>
-<li>To help provide support and monitor the performance of the SDK, we use our own Checkout Event Logger Kit.</li>
+<li>To help maintain security, we use <a href="https://github.com/airsidemobile/JOSESwift">JOSESwift</a> — the SDK&rsquo;s only external dependency.</li>
+<li>To help provide support and monitor the performance of the SDK, we use our own Checkout Event Logger Kit. Since 3.3.4 it is bundled inside the SDK as a local Swift package (<code>CheckoutEventLoggerKit/</code>) — nothing extra is fetched or added to your package graph.</li>
 </ul>
 <h2 id='help-and-feedback' class='heading'>Help and Feedback</h2>
 
@@ -492,7 +548,7 @@ standalone3DSService?.cleanUp()
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-06-09)</p>
+      <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-11-27)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>

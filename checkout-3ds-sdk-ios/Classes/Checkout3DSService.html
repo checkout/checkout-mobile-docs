@@ -100,6 +100,9 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/DefaultWhitelistCustomization.html">DefaultWhitelistCustomization</a>
               </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ProtocolErrorEvent.html">ProtocolErrorEvent</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -254,9 +257,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@Checkout3DS@objc(cs)Checkout3DSService(im)initWithEnvironment:locale:uiCustomization:appURL:"></a>
-                    <a name="//apple_ref/swift/Method/init(environment:locale:uiCustomization:appURL:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@Checkout3DS@objc(cs)Checkout3DSService(im)initWithEnvironment:locale:uiCustomization:appURL:">init(environment:<wbr>locale:<wbr>uiCustomization:<wbr>appURL:<wbr>)</a>
+                    <a name="/c:@M@Checkout3DS@objc(cs)Checkout3DSService(im)initWithEnvironment:locale:uiCustomization:appURL:baseURLPrefix:"></a>
+                    <a name="//apple_ref/swift/Method/init(environment:locale:uiCustomization:appURL:baseURLPrefix:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@objc(cs)Checkout3DSService(im)initWithEnvironment:locale:uiCustomization:appURL:baseURLPrefix:">init(environment:<wbr>locale:<wbr>uiCustomization:<wbr>appURL:<wbr>baseURLPrefix:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -275,7 +278,106 @@
 <span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">environment</span><span class="p">:</span> <span class="kt"><a href="../Enums/Environment.html">Environment</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">production</span><span class="p">,</span>
                         <span class="nv">locale</span><span class="p">:</span> <span class="kt">Foundation</span><span class="o">.</span><span class="kt">Locale</span> <span class="o">=</span> <span class="o">.</span><span class="n">autoupdatingCurrent</span><span class="p">,</span>
                         <span class="nv">uiCustomization</span><span class="p">:</span> <span class="kt"><a href="../Protocols/UICustomization.html">UICustomization</a></span> <span class="o">=</span> <span class="kt"><a href="../Classes/DefaultUICustomization.html">DefaultUICustomization</a></span><span class="p">(),</span>
-                        <span class="nv">appURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                        <span class="nv">appURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                        <span class="nv">baseURLPrefix</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>environment</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(optional) The Checkout.com environment that the SDK will connect to. If no value is provided, the default is production. See <a href="x-source-tag://Environment">Environment</a> for more information.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>locale</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(optional) The customer’s locale and preferred language, used to localise the user interface. If no value is set, the device locale is used. (E.g. “en_GB”)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>uiCustomization</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The customizations for the challenge user interface. See <a href="x-source-tag://UICustomization">UICustomization</a> for more information.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>appURL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(optional) The URL of your app, used to return the customer to your app after an out-of-band challenge in their banking app.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>baseURLPrefix</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(optional) Your merchant-specific subdomain (MSSD) prefix: the first 8 characters of your <code>client_id</code> after <code>cli_</code>, required for clients created on or after 1 October 2026. Must be exactly 8 letters or digits, otherwise <code>authenticate</code> fails with <code>invalidBaseURLPrefix</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Checkout3DS@objc(cs)Checkout3DSService(im)initWithEnvironment:locale:uiCustomization:appURL:"></a>
+                    <a name="//apple_ref/swift/Method/init(environment:locale:uiCustomization:appURL:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Checkout3DS@objc(cs)Checkout3DSService(im)initWithEnvironment:locale:uiCustomization:appURL:">init(environment:<wbr>locale:<wbr>uiCustomization:<wbr>appURL:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Four-argument initialiser without <code>baseURLPrefix</code>, kept so existing Swift function references and the <code>initWithEnvironment:locale:uiCustomization:appURL:</code> selector keep compiling.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">environment</span><span class="p">:</span> <span class="kt"><a href="../Enums/Environment.html">Environment</a></span><span class="p">,</span>
+                        <span class="nv">locale</span><span class="p">:</span> <span class="kt">Foundation</span><span class="o">.</span><span class="kt">Locale</span><span class="p">,</span>
+                        <span class="nv">uiCustomization</span><span class="p">:</span> <span class="kt"><a href="../Protocols/UICustomization.html">UICustomization</a></span><span class="p">,</span>
+                        <span class="nv">appURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?)</span></code></pre>
 
                         </div>
                       </div>
@@ -539,7 +641,7 @@ background thread and not the main thread.
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-06-09)</p>
+      <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-11-27)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>
